@@ -36,23 +36,24 @@ def go(*pargs):
 
     print(ser.readall().decode('utf-8'))
     for arg in pargs:
-        ser.write(bytes(str(arg), encoding='utf-8'))
+        ser.write(arg)
     time.sleep(delay)
 
 
 def set_br(PAM, baserate, channel):
-    go('\n')
-    go('3\n')
-    go('pam ', PAM, ' ', channel, b'\n')
-    go('baserate ', baserate, ' ', channel, '\n')
-    go('m\n')
-    go('2\n')
-    go('apply\n')
-    go('m\n')
+    go('\r')
+    go('3\r')
+    go('pam ', PAM, ' ', channel, '\r')
+    go('baserate ', baserate, ' ', channel, '\r')
+    go('m\r')
+    go('2\r')
+    go('apply\r')
+    go('m\r')
 
 
+ser.write('\r');
 print(ser.read_until('Exit', 200).decode('utf-8'))
-ser.write(b'\n')
+ser.write('\r');
 print(ser.readall().decode('utf-8'))
 set_br(32, 88, 1)
 
