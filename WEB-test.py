@@ -52,6 +52,13 @@ def set_params(pam, baserate, channel = '1', ip = masterip, mode = 'Master'):
     Select(driver.find_element_by_id('rstp_pbvl_0')).select_by_value("enabled") #rstp a on
     driver.find_element_by_css_selector('input[value="Save"]').click()
     driver.switch_to.default_content()
-    driver.switch_to.frame('main')
+    driver.switch_to.frame('left')
+    driver.find_element_by_css_selector("tbody > tr:nth-child(3) > td > a").click() # переход в DSL Status
+
+
+
+
+
+
 
 set_params(pam, baserate)
