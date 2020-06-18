@@ -1,16 +1,11 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException
 
-masterip = '192.168.0.223'
-slaveip = '192.168.0.222'
-baserate = 89
+master_ip = '192.168.0.223'
+slave_ip = '192.168.0.222'
+baserate = 88
 pam = 32
-
-driver = webdriver.Chrome('C:\webdriverChrome\chromedriver.exe')
-driver.implicitly_wait(5)
 
 
 def set_params(pam, baserate, channel='1', mode='Master'):
@@ -86,6 +81,7 @@ def set_rstp_a_on():
 def check_dsl_connection():
     driver.switch_to.frame('left')
     driver.find_element_by_css_selector("tbody > tr:nth-child(3) > td > a").click()  # переход в DSL Status
+    time.sleep(30)  # Ожидание установки DSL соединения
     driver.switch_to.default_content()
     driver.switch_to.frame('main')
     dsl_status = driver.find_element_by_css_selector("body > table > tbody > tr:nth-child(3) > td:nth-child(2)").text
@@ -115,8 +111,8 @@ def apply_confirm():
     driver.switch_to.default_content()
 
 
-def test_1():
-    driver.get("http://" + masterip)
+def test_first():
+    driver.get("http://" + master_ip)
     configuration_menu()
     set_payload_eth()
     set_rstp_a_on()
@@ -124,21 +120,46 @@ def test_1():
     apply_confirm()
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[1])
-    driver.get("http://" + slaveip)
+    driver.get("http://" + slave_ip)
     configuration_menu()
     set_payload_eth()
     set_rstp_a_on()
-    set_params(pam, baserate)
+    set_params(pam, baserate, mode='Slave')
     apply_confirm()
 
     result = check_dsl_connection()
-    if result == 1:
+    if result == '1':
         print('test passed')
-    elif result == 0:
+    elif result == '-':
         print('dsl is not working')
     else:
         print('test failed')
+    driver.close()
+
+
+def test_second():  # Не настраивает payload и rstp
+    driver.get("http://" + master_ip)
+    configuration_menu()
+    set_params(pam, baserate)
+    apply_confirm()
+    driver.execute_script("window.open('');")
+    driver.switch_to.window(driver.window_handles[1])
+    driver.get("http://" + slave_ip)
+    configuration_menu()
+    set_params(pam, baserate, mode='Slave')
+    apply_confirm()
+
+    result = check_dsl_connection()
+    if result == '1':
+        print('test passed')
+    elif result == '-':
+        print('dsl is not working')
+    else:
+        print('test failed')
+    driver.close()
 
 
 if __name__ == '__main__':
-    test_1()
+    driver = webdriver.Chrome('C:\webdriverChrome\chromedriver.exe')
+    driver.implicitly_wait(5)
+    test_first()
