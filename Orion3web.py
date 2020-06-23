@@ -111,7 +111,7 @@ def apply_confirm():
     driver.switch_to.default_content()
 
 
-def test_first():
+def test_first(pam, baserate, channel='1'):
     driver.get("http://" + master_ip)
     configuration_menu()
     set_payload_eth()
@@ -162,4 +162,4 @@ def test_second():  # Не настраивает payload и rstp
 if __name__ == '__main__':
     driver = webdriver.Chrome('C:\webdriverChrome\chromedriver.exe')
     driver.implicitly_wait(5)
-    test_first()
+#   test_first()

@@ -1,14 +1,27 @@
 import telnetlib
 import time
+import argparse
+import sys
+import io_adapter
 
-host = "192.168.0.222"
-port = 23
-timeout = 10
+
 delay = 1
-n = 0
 
+def telnet_init(arguments):
+    print('.....')
+    parser = argparse.ArgumentParser(description='Orion3 telnet tester.')
+    parser.add_argument('--host', default='192.168.0.222', help='modem ip')
+    parser.add_argument('--port', default=23, help='port for telnet connection')
+    parser.add_argument('--timeout', default=10)
 
-def go(*pargs):
+    args = parser.parse_known_args(arguments)[0]
+    print(args)
+
+    session = telnetlib.Telnet(args.host, args.port, args.timeout)
+
+    return io_adapter.IOAdapter(io_object=session, io_method=go, open_cli=open_cli)
+
+def go(session, *pargs):
     global delay
     text = session.read_very_eager().decode('utf-8')
     print(text)
@@ -17,45 +30,10 @@ def go(*pargs):
     time.sleep(delay)
     return text
 
-
-def set_br(PAM, baserate, channel):
-    go('m\r')
-    go('3\r')
-    go('pam ', PAM, ' ', channel, '\r')
-    go('baserate ', baserate, ' ', channel, '\r')
-    go('m\r')
-    go('2\r')
-    go('apply\r')
-    go('m\r')
-
-
-def check_status():
-    session.write(b"\r")
-    go('m\r')
-    # go('m\r')
-    go('2\r')
-    go('status\r')
-    text = go('\r')
-    print('!!!', text)
-    a = text.find('SYNC')
-    print(text[a + 33])
-    if text[a + 33] == '1':
-        print('test passed')
-    elif text[a + 33] == '-':
-        print('no dsl connection')
-    else:
-        print('some error')
-    go('m\r')
-
-
-baserate = 88
-pam = 32
-channel = 1
-connection_expectation = 30
+def open_cli(arguments):
+    pass
 
 if __name__ == '__main__':
-    session = telnetlib.Telnet(host, port, timeout)
-    session.write(b"\r")
     go('m\r')  # Войти в модем
     if go('m\r'):
         set_br(pam, baserate, channel)
