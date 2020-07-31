@@ -4,12 +4,35 @@ import argparse
 import sys
 import io_adapter
 
+
+class ComAdapter(io_adapter.IOAdapter):
+    DELAY = 1
+
+    def send(self, arg):
+        self.io_object.write(bytes(str(arg), encoding='utf-8'))
+
+    def read(self):
+        return self.io_object.readall().decode('utf-8')
+
+    def open_cli(self):
+        print("Opening CLI")
+        self.send('\r')
+
+    def move(self, *pargs):
+        print(self.read())
+        for arg in pargs:
+            self.send(arg)
+        text = self.send('\r')
+        time.sleep(self.DELAY)
+        return text
+
+
 def com_init(arguments):
     print("....")
     parser = argparse.ArgumentParser(description='Orion3 COM-port tester.')
-    parser.add_argument('--port', default='COM3', help='Selected communication port')
+    parser.add_argument('--port', default='COM1', help='Selected communication port')
     parser.add_argument('--baudrate', default=9600, type=int, help='Port speed')
-    parser.add_argument('--timeout', default=5, help='Read timeout')
+    parser.add_argument('--timeout', default=1, help='Read timeout')
 
     parser.add_argument('--parity', default=serial.PARITY_NONE,
                         choices=[
@@ -33,48 +56,13 @@ def com_init(arguments):
     )
 
     print(args)
-    return io_adapter.IOAdapter(io_object=ser, io_method=go, open_cli=open_cli)
-
-
-def go(ser, *pargs):
-    for arg in pargs:
-        print('sending - ', arg)
-        ser.write(bytes(str(arg), encoding='utf-8'))
-    time.sleep(1)
-
-    for line in ser:
-        print(line)
-    #text = ser.readall().decode('utf-8')
-    #print(text)
-    return "---"
-
-def open_cli(ser):
-    print("Opening CLI")
-    ser.write(b'\n')
-
-
-
-
-baserate = 88
-pam = 32
-channel = 1
-connection_expectation = 30
-
-
-def test_1(ser, pam, baserate, channel):
-    ser.write(b'\r')  # Войти в модем
-    if go('m\r'):
-        set_br(pam, baserate, channel)
-        print('set br complete')
-        time.sleep(connection_expectation)
-        check_status()
-    else:
-        print('no connection?')
-    ser.close()
+    return ComAdapter(io_object=ser)
 
 
 if __name__ == '__main__':
-    io_data = com_init(sys.argv)
-    # test_1(io_data, pam, baserate, channel)
-    set_br(io_data, 32, 64, 1)
-    io_data["parameter"].close()
+    com_adapter = com_init(sys.argv)
+    com_adapter.open_cli()
+    com_adapter.move('3\r')
+    com_adapter.move('3\r')
+    com_adapter.move('3\r')
+    com_adapter.move('3\r')
