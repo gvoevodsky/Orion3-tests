@@ -16,15 +16,20 @@ class TelnetAdapter(io_adapter.IOAdapter):
 
     def open_cli(self):
         print("Opening CLI")
+        self.send('\n')
         self.send('\r')
 
     def move(self, *pargs):
-        print(self.read())
         for arg in pargs:
             self.send(arg)
-        text = self.send('\r')
+        self.send('\r')
+        text = self.read()
+        print(text)
         time.sleep(self.DELAY)
         return text
+
+    def reconnect(self):
+        self.io_object = telnet_init(sys.argv).io_object
 
 
 def telnet_init(arguments):

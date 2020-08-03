@@ -19,10 +19,11 @@ class ComAdapter(io_adapter.IOAdapter):
         self.send('\r')
 
     def move(self, *pargs):
-        print(self.read())
         for arg in pargs:
             self.send(arg)
-        text = self.send('\r')
+        self.send('\r')
+        text = self.read()
+        print(text)
         time.sleep(self.DELAY)
         return text
 

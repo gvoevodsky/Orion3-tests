@@ -3,6 +3,8 @@ import argparse
 import sys
 import cli_tests
 import Orion3telnet
+import combined_tests
+
 
 print(sys.argv)
 
@@ -23,5 +25,7 @@ else:
     print('Fail')
 
 if __name__ == '__main__':
+    print(io_adapter, 'OLOLO')
     cli_tests.open_cli(io_adapter)
-    cli_tests.set_br(io_adapter, 32, 89, 1)
+    #comb.set_br(io_adapter, 32, 89, 1)
+    combined_tests.test_1(io_adapter)

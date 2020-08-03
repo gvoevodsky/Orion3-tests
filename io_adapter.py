@@ -13,3 +13,6 @@ class IOAdapter:
 
     def move(self):
         pass
+
+    def reconnect(self):
+        pass

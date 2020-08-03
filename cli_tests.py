@@ -1,5 +1,6 @@
 
-def set_br(io_adapter, pam, baserate, channel):
+def set_br(io_adapter, pam, baserate, channel = 1):
+    open_cli(io_adapter)
     io_adapter.move("m")
     io_adapter.move("m")
     io_adapter.move("3")
@@ -12,7 +13,7 @@ def set_br(io_adapter, pam, baserate, channel):
     io_adapter.move("m")
 
 def check_status(io_adapter):
-    io_adapter.move('2')
+    open_cli(io_adapter)
     io_adapter.move('m')
     io_adapter.move('2')
     io_adapter.move('status')
@@ -31,9 +32,10 @@ def open_cli(io_adapter):
     io_adapter.open_cli()
 
 def test_1():
+    pass
 
 
-'''
+trash = '''
     def test_1(ser, pam, baserate, channel):
         ser.write(b'\r')  # Войти в модем
         if go('m\r'):
