@@ -1,8 +1,6 @@
 from cli_tests import set_br, check_status
 import random
 import time
-import Orion3com
-import Orion3telnet
 
 pam_pull = [4, 8, 16, 32, 64, 128]
 baserate_pull_pam4 = [i for i in range(2, 40)]
@@ -17,7 +15,7 @@ all_baserate_pulls = [baserate_pull_pam4, baserate_pull_pam8, baserate_pull_pam1
 baserate_pull_to_pam = dict(zip(pam_pull, all_baserate_pulls))
 
 
-def test_1(io_adapter):  # For each pam checking 10 random baserates for set_br -> check_status
+def test_1(io_adapter, io_adapter_slave = None):  # For each pam checking 10 random baserates for set_br -> check_status
     for pam in pam_pull:
         random_pam_pull = []
         for i in range(10):
