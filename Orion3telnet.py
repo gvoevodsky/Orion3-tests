@@ -1,6 +1,5 @@
 import telnetlib
 import time
-import argparse
 import sys
 import io_adapter
 
@@ -33,28 +32,26 @@ class TelnetAdapter(io_adapter.IOAdapter):
 
 
 def telnet_init(arguments):
-    print('.....')
-    parser = argparse.ArgumentParser(description='Orion3 telnet tester.')
-    parser.add_argument('--host', default='192.168.1.10', help='modem ip')
-    parser.add_argument('--port', default=23, help='port for telnet connection')
-    parser.add_argument('--timeout', default=10)
-    parser.add_argument('--delay', default=1, help='delay  ')
-
-    args = parser.parse_known_args(arguments)[0]
-    print(args)
-
-    session = telnetlib.Telnet(args.host, args.port, args.timeout)
-
+    session = telnetlib.Telnet(host=arguments[1], port=23, timeout=int(arguments[2]))
     return TelnetAdapter(io_object=session)
 
+
+# def telnet_init(arguments, n):
+#    print('.....')
+#    parser = argparse.ArgumentParser(description='Orion3 telnet tester.')
+#    parser.add_argument('--host', default='192.168.1.10', help='modem ip')
+#    parser.add_argument('--port', default=23, help='port for telnet connection')
+#    parser.add_argument('--timeout', default=10)
+#    parser.add_argument('--delay', default=1, help='delay  ')
+#
+#    args = parser.parse_known_args(arguments)[0]
+#    print(args)
+#
+#    session = telnetlib.Telnet(args.host[n], args.port, args.timeout)
+#
+#    return TelnetAdapter(io_object=session)
+#
 
 if __name__ == '__main__':
     telnet_adapter = telnet_init(sys.argv)
     telnet_adapter.open_cli()
-    telnet_adapter.read()
-
-    telnet_adapter.move('3\r')
-    telnet_adapter.move('3\r')
-    telnet_adapter.move('3\r')
-    telnet_adapter.move('3\r')
-    telnet_adapter.move('3\r')
