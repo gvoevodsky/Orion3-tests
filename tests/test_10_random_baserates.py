@@ -28,6 +28,9 @@ def test_cli(device, pam, baserate, channel=1, mode='Master'):
     print('Starting cli test___________________________________________________________')
     cli_basement_moves.set_br(device, pam, baserate, 1, mode)
 
+def test_cli_in_configuration_menu(device):
+    pass
+
 
 def test_main(devices):
     for pam in pam_pull:
@@ -50,7 +53,7 @@ def test_main(devices):
                 if device.__class__.__name__ == 'WebAdapter':
                     thread = Thread(target=test_web, args=(device, pam, random_baserate, 1, 'Master'))
                     list_of_threads.append(thread)
-                elif device.__class__.__name__ == 'ComAdapter' or device.__class__.__name__ == 'TelnetAdapter' or device.__class__.__name__ == 'SshAdapter':
+                elif device.__class__.__name__ == 'ComAdapter' or device.__class__.__name__ == 'TelnetAdapter' or device.__class__.__name__ == 'SshAdapter': #we can do faster by adding device.move methods instead of test_cli()
                     thread = Thread(target=test_cli, args=(device, pam, random_baserate, 1, 'Slave'))
                     list_of_threads.append(thread)
                 else:
