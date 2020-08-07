@@ -1,20 +1,27 @@
-from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import time
 
+def close_browser(device):
+    device.driver.close()
 
-def set_params(driver, pam, baserate, channel='1', mode='Master'):
-    driver.switch_to.frame('main')
-    driver.find_element_by_css_selector("#toc > li:nth-child(1) > a").click()
-    select = Select(driver.find_element_by_id("dsl1_master_mode"))
+def test_test(device):
+    print(device)
+
+def get_url(device):
+    device.open_url()
+
+def set_params(device, pam, baserate, channel='1', mode='Master'):
+    device.driver.switch_to.frame('main')
+    device.driver.find_element_by_css_selector("#toc > li:nth-child(1) > a").click()
+    select = Select(device.driver.find_element_by_id("dsl1_master_mode"))
     if mode == 'Master':  # Mode chosing
         select.select_by_value("1")
     else:
         select.select_by_value("0")
-    Select(driver.find_element_by_id("dsl1_ext")).select_by_value("1")  # Extended ON
-    driver.find_element_by_id('dsl1_baserate').clear()
-    driver.find_element_by_id('dsl1_baserate').send_keys(str(baserate))  # Set baserate
-    select2 = Select(driver.find_element_by_id("dsl1_pam"))
+    Select(device.driver.find_element_by_id("dsl1_ext")).select_by_value("1")  # Extended ON
+    device.driver.find_element_by_id('dsl1_baserate').clear()
+    device.driver.find_element_by_id('dsl1_baserate').send_keys(str(baserate))  # Set baserate
+    select2 = Select(device.driver.find_element_by_id("dsl1_pam"))
     if pam == 32:
         select2.select_by_value("1")
     elif pam == 64:
@@ -29,16 +36,16 @@ def set_params(driver, pam, baserate, channel='1', mode='Master'):
         select2.select_by_value("3")
     else:
         print('wrong baserate!')
-    savebutton = driver.find_element_by_css_selector('input[value="Save"]')
+    savebutton = device.driver.find_element_by_css_selector('input[value="Save"]')
     savebutton.click()
     time.sleep(1)
-    driver.switch_to.default_content()
+    device.driver.switch_to.default_content()
 
 
-def configuration_menu(driver):
-    driver.switch_to.frame('left')
-    driver.find_element_by_css_selector("tbody > tr:nth-child(10) > td > a").click()
-    driver.switch_to.default_content()
+def configuration_menu(device):
+    device.driver.switch_to.frame('left')
+    device.driver.find_element_by_css_selector("tbody > tr:nth-child(10) > td > a").click()
+    device.driver.switch_to.default_content()
 
 
 def set_payload_eth(driver):
@@ -85,25 +92,25 @@ def check_dsl_connection(driver):
     return dsl_status
 
 
-def apply_confirm(driver):
-    driver.switch_to.frame('main')
-    if driver.find_elements_by_css_selector('input[value="Apply All"]'):
-        apply_button = driver.find_element_by_css_selector('input[value="Apply All"]')
+def apply_confirm(device):
+    device.driver.switch_to.frame('main')
+    if device.driver.find_elements_by_css_selector('input[value="Apply All"]'):
+        apply_button = device.driver.find_element_by_css_selector('input[value="Apply All"]')
         apply_button.click()
-        time.sleep(3)
-        driver.switch_to.alert.accept()
-        time.sleep(3)
-    else:
-        pass
-    if driver.find_elements_by_css_selector('input[value="Confirm"]'):
-        confirm_button = driver.find_element_by_css_selector('input[value="Confirm"]')
-        confirm_button.click()
-        time.sleep(3)
-        driver.switch_to.alert.accept()
+        time.sleep(1)
+        device.driver.switch_to.alert.accept()
         time.sleep(1)
     else:
         pass
-    driver.switch_to.default_content()
+    if device.driver.find_elements_by_css_selector('input[value="Confirm"]'):
+        confirm_button = device.driver.find_element_by_css_selector('input[value="Confirm"]')
+        confirm_button.click()
+        time.sleep(1)
+        device.driver.switch_to.alert.accept()
+        time.sleep(1)
+    else:
+        pass
+    device.driver.switch_to.default_content()
 
 
 def test_first(driver, pam, baserate, channel='1'):

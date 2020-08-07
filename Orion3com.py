@@ -54,38 +54,5 @@ def com_init(arguments):
 
     return ComAdapter(io_object=ser)
 
-
-#def com_init(arguments):
-#    print("....")
-#    parser = argparse.ArgumentParser(description='Orion3 COM-port tester.')
-#    parser.add_argument('--port', default='COM1', help='Selected communication port')
-#    parser.add_argument('--baudrate', default=9600, type=int, help='Port speed')
-#    parser.add_argument('--timeout', default=1, help='Read timeout')
-#
-#    parser.add_argument('--parity', default=serial.PARITY_NONE,
-#                        choices=[
-#                            serial.PARITY_NONE,
-#                            serial.PARITY_EVEN,
-#                            serial.PARITY_ODD,
-#                            serial.PARITY_MARK,
-#                            serial.PARITY_SPACE
-#                        ],
-#                        help='Read timeout')
-#
-#    args = parser.parse_known_args(arguments)[0]
-#
-#    ser = serial.Serial(
-#        port=args.port,
-#        baudrate=args.baudrate,
-#        parity=args.parity,
-#        stopbits=serial.STOPBITS_ONE,
-#        bytesize=serial.EIGHTBITS,
-#        timeout=args.timeout
-#    )
-#
-#    print(args)
-#    return ComAdapter(io_object=ser)
-
-
 if __name__ == '__main__':
     com_adapter = com_init(sys.argv)

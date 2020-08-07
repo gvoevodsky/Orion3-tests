@@ -1,38 +1,42 @@
+import time
 
-def set_br(io_adapter, pam, baserate, channel = 1):
+def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
     open_cli(io_adapter)
-    io_adapter.move("m")
     io_adapter.move("m")
     io_adapter.move("3")
     io_adapter.move("pam ", pam, ' ', channel, '\r')
     io_adapter.move('baserate ', baserate, ' ', channel, '\r')
-    io_adapter.move('m')
-    io_adapter.move('2')
+    if mode == 'Master':
+        io_adapter.move('master on ', channel, '\r')
+    else:
+        io_adapter.move('master off ', channel, '\r')
     io_adapter.move('apply')
-    io_adapter.move('m')
-    io_adapter.move("m")
+
 
 def check_status(io_adapter):
+    waiting_for_connection_time = 30
     open_cli(io_adapter)
     io_adapter.move('m')
+    time.sleep(waiting_for_connection_time) # waiting 20 sec to DSL connection established
     io_adapter.move('2')
-    io_adapter.move('status')
-    text = io_adapter.move('')
+    text = io_adapter.move('status')
     a = text.find('SYNC')
     print(text[a + 33])
     if text[a + 33] == '1':
-        print('test passed')
+        print('DSL connection established')
     elif text[a + 33] == '-':
         print('no dsl connection')
     else:
         print('some error')
     io_adapter.move('m')
 
+
 def open_cli(io_adapter):
     io_adapter.open_cli()
 
-def test_1():
-    pass
+
+def reconnect(io_adapter):
+    io_adapter.reconnect()
 
 
 trash = '''
