@@ -15,9 +15,9 @@ def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
 
 def check_status(io_adapter):
     waiting_for_connection_time = 30
+    time.sleep(waiting_for_connection_time)
     open_cli(io_adapter)
     io_adapter.move('m')
-    time.sleep(waiting_for_connection_time) # waiting 20 sec to DSL connection established
     io_adapter.move('2')
     text = io_adapter.move('status')
     a = text.find('SYNC')

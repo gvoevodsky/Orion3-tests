@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class WebAdapter:
     '''
-    Parameters is list of ip address, port and
+    Parameters is list of  protocol, ip address, port and browser (http://192.168.1.10:80:ChRoMe)
     '''
 
     def __init__(self, parameters):

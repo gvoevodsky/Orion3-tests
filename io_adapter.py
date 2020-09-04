@@ -16,3 +16,6 @@ class IOAdapter:
 
     def reconnect(self):
         pass
+
+    def close_session(self):
+        pass
