@@ -6,6 +6,13 @@ import Orion3web
 import importlib
 import Orion3ssh
 
+
+
+
+
+
+
+
 parser = argparse.ArgumentParser(description='Orion3 tester.')
 
 parser.add_argument('--device', nargs='+', help='Device configuration')
@@ -46,6 +53,7 @@ for device in args.device:
 
     if len(list_of_connections) > 2:
         print('Too many connections!')
+        logger.error('Too many connections!')
 
 print(list_of_connections)  # must be less than 2
 print(args)
@@ -53,4 +61,4 @@ print(args)
 if __name__ == '__main__':
     test_to_run = args.test
     iter_tools = importlib.import_module(('.' + args.test), '.tests')
-    iter_tools.test_main(list_of_connections)
+    iter_tools.test_main(list_of_connections) # will run test_main from imported module

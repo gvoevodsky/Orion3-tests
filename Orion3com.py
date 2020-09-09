@@ -3,6 +3,7 @@ import time
 import argparse
 import sys
 import io_adapter
+import logs
 
 
 class ComAdapter(io_adapter.IOAdapter):
@@ -23,7 +24,9 @@ class ComAdapter(io_adapter.IOAdapter):
             self.send(arg)
         self.send('\r')
         text = self.read()
+        #logs.logger.info(text)
         print(text)
+        print('_____________________________________________________________________________')
         time.sleep(self.DELAY)
         return text
 

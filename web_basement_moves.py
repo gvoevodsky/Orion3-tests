@@ -89,7 +89,7 @@ def check_dsl_connection(driver):
     dsl_status = driver.find_element_by_css_selector("body > table > tbody > tr:nth-child(3) > td:nth-child(2)").text
     print(dsl_status)
     driver.switch_to.default_content()
-    return dsl_status
+    return str(dsl_status)
 
 
 def apply_confirm(device):

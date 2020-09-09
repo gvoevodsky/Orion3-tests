@@ -5,12 +5,6 @@ import sys
 import time
 
 
-#   host = '192.168.1.1'
-#   user = 'login'
-#   secret = 'password'
-#   port = 22
-
-
 class SshAdapter(io_adapter.IOAdapter):
     DELAY = 1
     NUMBER_OF_SYMBOLS_TO_RETURN = 3000
@@ -39,6 +33,10 @@ class SshAdapter(io_adapter.IOAdapter):
 
     def reconnect(self):
         self.io_object = ssh_init(sys.argv).io_object  # check this
+        self.io_object.invoke_shell()
+
+    def close_session(self):
+        self.io_object.close()
 
 
 def handler():
@@ -50,12 +48,15 @@ def ssh_init(arguments):
     sock.connect((arguments[1], 22))  # arguments[1] = device ip
     ts = paramiko.Transport(sock)
     ts.start_client(timeout=10)
-    ts.auth_interactive(arguments[2], handler)  # argument[2] = username
+    ts.auth_interactive(username=arguments[2], handler=handler)  # argument[2] = username
     chan = ts.open_session(timeout=arguments[3])
     # chan.invoke_shell()
     return SshAdapter(io_object=chan)
 
 
 if __name__ == '__main__':
-    ssh_adapter = ssh_init(['ssh', '192.168.10.3', 'admin', 10])
+    ssh_adapter = ssh_init(['ssh', '192.168.10.123', 'admin', 10])
     ssh_adapter.open_cli()
+    ssh_adapter.move('3')
+    ssh_adapter.move('config\r')
+    ssh_adapter.close_session()

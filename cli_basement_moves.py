@@ -1,4 +1,6 @@
 import time
+import logs
+
 
 def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
     open_cli(io_adapter)
@@ -14,7 +16,7 @@ def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
 
 
 def check_status(io_adapter):
-    waiting_for_connection_time = 30
+    waiting_for_connection_time = 40
     time.sleep(waiting_for_connection_time)
     open_cli(io_adapter)
     io_adapter.move('m')
@@ -23,13 +25,18 @@ def check_status(io_adapter):
     a = text.find('SYNC')
     print(text[a + 33])
     if text[a + 33] == '1':
-        print('DSL connection established')
+        status = 'DSL connection established'
+        logs.logger.warning(status)
+        print(status)
     elif text[a + 33] == '-':
-        print('no dsl connection')
+        status = 'no dsl connection'
+        logs.logger.error(status)
+        print(status)
     else:
+        logs.logger.error('check status fail')
         print('some error')
     io_adapter.move('m')
-
+    return status
 
 def open_cli(io_adapter):
     io_adapter.open_cli()
