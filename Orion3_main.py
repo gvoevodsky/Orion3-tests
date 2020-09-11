@@ -5,12 +5,7 @@ import Orion3telnet
 import Orion3web
 import importlib
 import Orion3ssh
-
-
-
-
-
-
+import logs
 
 
 parser = argparse.ArgumentParser(description='Orion3 tester.')
@@ -19,8 +14,7 @@ parser.add_argument('--device', nargs='+', help='Device configuration')
 parser.add_argument('--test', help='tests to run')
 args = parser.parse_known_args(sys.argv)[0]
 
-print(args)
-print(sys.argv)
+logs.logger.warning('Test started with ARGS:' + str(args))
 
 list_of_connections = []
 for device in args.device:
@@ -49,14 +43,11 @@ for device in args.device:
         io_adapter = Orion3web.WebAdapter(device_parameters)
         list_of_connections.append(io_adapter)
     else:
-        print('Wrong method')
+        logs.logger.error('Wrong method')
+        break
 
     if len(list_of_connections) > 2:
-        print('Too many connections!')
-        logger.error('Too many connections!')
-
-print(list_of_connections)  # must be less than 2
-print(args)
+        logs.logger.error('Too many connections! (>2)')
 
 if __name__ == '__main__':
     test_to_run = args.test

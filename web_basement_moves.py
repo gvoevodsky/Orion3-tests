@@ -1,5 +1,7 @@
 from selenium.webdriver.support.ui import Select
 import time
+import logs
+
 
 def close_browser(device):
     device.driver.close()
@@ -89,7 +91,13 @@ def check_dsl_connection(driver):
     dsl_status = driver.find_element_by_css_selector("body > table > tbody > tr:nth-child(3) > td:nth-child(2)").text
     print(dsl_status)
     driver.switch_to.default_content()
-    return str(dsl_status)
+    if dsl_status == 1:
+        logs.logger.warning('DSL connection established')
+    elif dsl_status == 0:
+        logs.logger.error('no dsl connection')
+    else:
+        logs.logger.error(f'check status fail :{dsl_status}')
+    return dsl_status
 
 
 def apply_confirm(device):

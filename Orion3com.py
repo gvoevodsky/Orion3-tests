@@ -16,7 +16,7 @@ class ComAdapter(io_adapter.IOAdapter):
         return self.io_object.readall().decode('utf-8')
 
     def open_cli(self):
-        print("Opening CLI")
+        logs.logger.info("Opening CLI")
         self.send('\r')
 
     def move(self, *pargs):
@@ -24,14 +24,11 @@ class ComAdapter(io_adapter.IOAdapter):
             self.send(arg)
         self.send('\r')
         text = self.read()
-        #logs.logger.info(text)
-        print(text)
-        print('_____________________________________________________________________________')
+        logs.logger.info(text)
         time.sleep(self.DELAY)
         return text
 
 def com_init(arguments):
-    print("....")
     parser = argparse.ArgumentParser(description='Orion3 COM-port tester.')
     parser.add_argument('--timeout', default=1, help='Read timeout')
     parser.add_argument('--parity', default=serial.PARITY_NONE,

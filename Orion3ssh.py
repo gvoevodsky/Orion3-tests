@@ -3,14 +3,20 @@ import io_adapter
 import socket
 import sys
 import time
-
+import logs
 
 class SshAdapter(io_adapter.IOAdapter):
     DELAY = 1
     NUMBER_OF_SYMBOLS_TO_RETURN = 3000
 
+    def __init__(self, io_object, args, socket):
+        self.io_object = io_object
+        self.args = args
+        self.socket = socket
+
+
     def send(self, arg):
-        encoded_string = arg.encode(encoding='utf-8')  # is it needed?
+        encoded_string = str(arg).encode(encoding='utf-8')  # is it needed?
         self.io_object.send(encoded_string)
 
     def read(self):
@@ -27,13 +33,20 @@ class SshAdapter(io_adapter.IOAdapter):
             self.send(arg)
         self.send('\r')
         text = self.read()
-        print(text)
+        logs.logger.info(text)
         time.sleep(self.DELAY)
         return text
 
     def reconnect(self):
-        self.io_object = ssh_init(sys.argv).io_object  # check this
-        self.io_object.invoke_shell()
+        time.sleep(2)
+        if self.socket._closed:
+            self.io_object = ssh_init(self.args).io_object
+            self.io_object.invoke_shell()
+        else:
+            pass
+
+        #self.io_object = ssh_init(sys.argv).io_object  # check this
+        #self.io_object.invoke_shell()
 
     def close_session(self):
         self.io_object.close()
@@ -51,7 +64,7 @@ def ssh_init(arguments):
     ts.auth_interactive(username=arguments[2], handler=handler)  # argument[2] = username
     chan = ts.open_session(timeout=arguments[3])
     # chan.invoke_shell()
-    return SshAdapter(io_object=chan)
+    return SshAdapter(io_object=chan, args = arguments, socket = sock)
 
 
 if __name__ == '__main__':

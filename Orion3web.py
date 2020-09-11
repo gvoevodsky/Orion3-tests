@@ -1,5 +1,5 @@
 from selenium import webdriver
-
+import logs
 
 class WebAdapter:
     '''
@@ -21,7 +21,7 @@ class WebAdapter:
 
     def open_url(self):
         self.open_browser()
-        print(f'opening {self.protocol}:{self.ip}:{self.port}')
+        logs.logger.info(f'opening {self.protocol}:{self.ip}:{self.port}')
         self.driver.get(f'{self.protocol}:{self.ip}:{self.port}')
 
     def close_browser(self):

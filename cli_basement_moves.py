@@ -16,25 +16,18 @@ def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
 
 
 def check_status(io_adapter):
-    waiting_for_connection_time = 40
+    waiting_for_connection_time = 1
+    #io_adapter.reconnect()
     time.sleep(waiting_for_connection_time)
     open_cli(io_adapter)
     io_adapter.move('m')
     io_adapter.move('2')
     text = io_adapter.move('status')
+    #logs.logger.error(text)
     a = text.find('SYNC')
-    print(text[a + 33])
-    if text[a + 33] == '1':
-        status = 'DSL connection established'
-        logs.logger.warning(status)
-        print(status)
-    elif text[a + 33] == '-':
-        status = 'no dsl connection'
-        logs.logger.error(status)
-        print(status)
-    else:
-        logs.logger.error('check status fail')
-        print('some error')
+    status = text[a + 33] # определяет как n ???
+    #status = text[a+30 : a+36]
+    time.sleep(1)
     io_adapter.move('m')
     return status
 

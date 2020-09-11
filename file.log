@@ -1,1 +1,181 @@
-2020-09-09 21:34:39,739 - logs - ERROR - DSL connection established
+2020-09-11 18:24:03,300 - logs - ERROR - n
+2020-09-11 18:31:26,614 - logs - ERROR - n
+2020-09-11 18:31:59,131 - logs - ERROR - -
+2020-09-11 18:35:06,277 - logs - ERROR - 1
+2020-09-11 18:35:20,612 - logs - ERROR - 1
+2020-09-11 18:46:33,978 - logs - ERROR - 1
+2020-09-11 18:49:52,055 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 18:49:53,074 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          1                                 
+SEGD                  :          1                                 
+Power backoff         :        6.0                                  dbm
+Far end power backoff :        6.0                                  dbm
+Loop attenuation      :        1.0                                  dB
+NMR                   :       36.0                                  dB
+Bitrate               :       1288                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.250 C
+----------------------------------------------------------------------------
+
+CO_FMM>
+2020-09-11 18:49:55,087 - logs - ERROR - 1
+2020-09-11 18:50:52,066 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 18:50:53,096 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          1                                 
+SEGD                  :          1                                 
+Power backoff         :        6.0                                  dbm
+Far end power backoff :        6.0                                  dbm
+Loop attenuation      :        1.0                                  dB
+NMR                   :       35.0                                  dB
+Bitrate               :       1288                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.250 C
+----------------------------------------------------------------------------
+
+CO_FMM>2
+Invalid command
+CO_FMM>
+2020-09-11 18:50:58,834 - logs - ERROR - 1
+2020-09-11 19:01:30,866 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 19:01:31,883 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          1                                 
+SEGD                  :          1                                 
+Power backoff         :        6.0                                  dbm
+Far end power backoff :        6.0                                  dbm
+Loop attenuation      :        1.0                                  dB
+NMR                   :       35.0                                  dB
+Bitrate               :       1288                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.500 C
+----------------------------------------------------------------------------
+
+CO_FMM>2
+Invalid command
+CO_FMM>
+2020-09-11 19:01:33,898 - logs - ERROR - 1
+2020-09-11 19:01:51,691 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 19:01:52,704 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          -                                 
+SEGD                  :          -                                 
+Power backoff         :        6.0                                  dbm
+Far end power backoff :        6.0                                  dbm
+Loop attenuation      :        1.0                                  dB
+NMR                   :       -8.0                                  dB
+Bitrate               :       1288                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.000 C
+----------------------------------------------------------------------------
+
+CO_FMM>
+2020-09-11 19:01:54,720 - logs - ERROR - -
+2020-09-11 19:12:18,960 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 19:12:19,978 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          -                                 
+SEGD                  :          -                                 
+Power backoff         :        0.0                                  dbm
+Far end power backoff :        0.0                                  dbm
+Loop attenuation      :        0.0                                  dB
+NMR                   :        0.0                                  dB
+Bitrate               :          0                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.000 C
+----------------------------------------------------------------------------
+
+CO_FMM>2
+Invalid command
+CO_FMM>
+2020-09-11 19:12:21,989 - logs - ERROR - -
+2020-09-11 19:16:46,053 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 19:16:47,081 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          -                                 
+SEGD                  :          -                                 
+Power backoff         :        0.0                                  dbm
+Far end power backoff :        0.0                                  dbm
+Loop attenuation      :        0.0                                  dB
+NMR                   :        0.0                                  dB
+Bitrate               :          0                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.250 C
+----------------------------------------------------------------------------
+
+CO_FMM>
+2020-09-11 19:16:49,102 - logs - ERROR - -
+2020-09-11 19:17:14,885 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
+Enter 'M' to return to MAIN, or 'H' for HELP information
+
+CO_FMM>
+2020-09-11 19:17:35,596 - logs - ERROR - STATUS
+----------------------------------------------------------------------------
+Status                :       DSL1
+----------------------------------------------------------------------------
+I/F mode              :         CO                                 
+SYNC                  :          -                                 
+SEGD                  :          -                                 
+Power backoff         :        0.0                                  dbm
+Far end power backoff :        0.0                                  dbm
+Loop attenuation      :        0.0                                  dB
+NMR                   :        0.0                                  dB
+Bitrate               :          0                                  kbit/s
+SRU #                 :          0                                  
+Active sync. source   :   Internal                                 
+----------------------------------------------------------------------------
+Temperature           :    53.250 C
+----------------------------------------------------------------------------
+
+CO_FMM>2
+Invalid command
+CO_FMM>
