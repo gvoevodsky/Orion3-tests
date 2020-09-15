@@ -1,181 +1,366 @@
-2020-09-11 18:24:03,300 - logs - ERROR - n
-2020-09-11 18:31:26,614 - logs - ERROR - n
-2020-09-11 18:31:59,131 - logs - ERROR - -
-2020-09-11 18:35:06,277 - logs - ERROR - 1
-2020-09-11 18:35:20,612 - logs - ERROR - 1
-2020-09-11 18:46:33,978 - logs - ERROR - 1
-2020-09-11 18:49:52,055 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 18:49:53,074 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          1                                 
-SEGD                  :          1                                 
-Power backoff         :        6.0                                  dbm
-Far end power backoff :        6.0                                  dbm
-Loop attenuation      :        1.0                                  dB
-NMR                   :       36.0                                  dB
-Bitrate               :       1288                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.250 C
-----------------------------------------------------------------------------
-
-CO_FMM>
-2020-09-11 18:49:55,087 - logs - ERROR - 1
-2020-09-11 18:50:52,066 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 18:50:53,096 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          1                                 
-SEGD                  :          1                                 
-Power backoff         :        6.0                                  dbm
-Far end power backoff :        6.0                                  dbm
-Loop attenuation      :        1.0                                  dB
-NMR                   :       35.0                                  dB
-Bitrate               :       1288                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.250 C
-----------------------------------------------------------------------------
-
-CO_FMM>2
-Invalid command
-CO_FMM>
-2020-09-11 18:50:58,834 - logs - ERROR - 1
-2020-09-11 19:01:30,866 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 19:01:31,883 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          1                                 
-SEGD                  :          1                                 
-Power backoff         :        6.0                                  dbm
-Far end power backoff :        6.0                                  dbm
-Loop attenuation      :        1.0                                  dB
-NMR                   :       35.0                                  dB
-Bitrate               :       1288                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.500 C
-----------------------------------------------------------------------------
-
-CO_FMM>2
-Invalid command
-CO_FMM>
-2020-09-11 19:01:33,898 - logs - ERROR - 1
-2020-09-11 19:01:51,691 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 19:01:52,704 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          -                                 
-SEGD                  :          -                                 
-Power backoff         :        6.0                                  dbm
-Far end power backoff :        6.0                                  dbm
-Loop attenuation      :        1.0                                  dB
-NMR                   :       -8.0                                  dB
-Bitrate               :       1288                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.000 C
-----------------------------------------------------------------------------
-
-CO_FMM>
-2020-09-11 19:01:54,720 - logs - ERROR - -
-2020-09-11 19:12:18,960 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 19:12:19,978 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          -                                 
-SEGD                  :          -                                 
-Power backoff         :        0.0                                  dbm
-Far end power backoff :        0.0                                  dbm
-Loop attenuation      :        0.0                                  dB
-NMR                   :        0.0                                  dB
-Bitrate               :          0                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.000 C
-----------------------------------------------------------------------------
-
-CO_FMM>2
-Invalid command
-CO_FMM>
-2020-09-11 19:12:21,989 - logs - ERROR - -
-2020-09-11 19:16:46,053 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 19:16:47,081 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          -                                 
-SEGD                  :          -                                 
-Power backoff         :        0.0                                  dbm
-Far end power backoff :        0.0                                  dbm
-Loop attenuation      :        0.0                                  dB
-NMR                   :        0.0                                  dB
-Bitrate               :          0                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.250 C
-----------------------------------------------------------------------------
-
-CO_FMM>
-2020-09-11 19:16:49,102 - logs - ERROR - -
-2020-09-11 19:17:14,885 - logs - ERROR - 2   [2J  [1;1HFault and maintenance management activated
-Enter 'M' to return to MAIN, or 'H' for HELP information
-
-CO_FMM>
-2020-09-11 19:17:35,596 - logs - ERROR - STATUS
-----------------------------------------------------------------------------
-Status                :       DSL1
-----------------------------------------------------------------------------
-I/F mode              :         CO                                 
-SYNC                  :          -                                 
-SEGD                  :          -                                 
-Power backoff         :        0.0                                  dbm
-Far end power backoff :        0.0                                  dbm
-Loop attenuation      :        0.0                                  dB
-NMR                   :        0.0                                  dB
-Bitrate               :          0                                  kbit/s
-SRU #                 :          0                                  
-Active sync. source   :   Internal                                 
-----------------------------------------------------------------------------
-Temperature           :    53.250 C
-----------------------------------------------------------------------------
-
-CO_FMM>2
-Invalid command
-CO_FMM>
+
+
+CO_MM>
+2020-09-11 20:56:46,440 - logs - WARNING - Test started with ARGS:Namespace(device=['com:1:9600', 'ssh:192.168.1.11:admin:10'], test='test_10_random_baserates')
+2020-09-11 20:56:47,841 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 20:57:27,562 - logs - WARNING - Test started with ARGS:Namespace(device=['telnet:192.168.1.10:10', 'ssh:192.168.1.11:admin:10'], test='test_10_random_baserates')
+2020-09-11 20:57:29,012 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 20:57:47,827 - logs - WARNING - Test started with ARGS:Namespace(device=['telnet:192.168.1.10:10', 'ssh:192.168.1.11:admin:10'], test='test_10_random_baserates')
+2020-09-11 20:57:49,261 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 20:58:07,711 - logs - WARNING - Test started with ARGS:Namespace(device=['telnet:192.168.1.10:10', 'ssh:192.168.1.11:admin:10'], test='test_10_random_baserates')
+2020-09-11 20:58:09,146 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 20:58:51,310 - logs - WARNING - [33, 35, 36, 4, 6, 5, 8, 14, 24]
+2020-09-11 20:58:51,312 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 20:58:57,379 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 20:59:05,492 - logs - ERROR - no DSL connection for pam:4 and baserate:33
+2020-09-11 20:59:05,494 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 20:59:13,112 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 20:59:24,822 - logs - WARNING - Test started with ARGS:Namespace(device=['telnet:192.168.1.10:10', 'ssh:192.168.1.11:admin:10'], test='test_10_random_baserates')
+2020-09-11 20:59:26,259 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:00:08,433 - logs - WARNING - [2, 3, 4, 38, 7, 11, 14, 16]
+2020-09-11 21:00:08,435 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 21:00:16,057 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 21:01:03,152 - logs - WARNING - DSL connection established for pam:4 and baserate:2
+2020-09-11 21:01:03,153 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 21:01:10,744 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 21:01:57,829 - logs - WARNING - DSL connection established for pam:4 and baserate:3
+2020-09-11 21:01:57,830 - logs - WARNING - Reconnecting telnet!!
+2020-09-11 21:04:48,632 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:04:50,067 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:05:32,257 - logs - WARNING - [37, 39, 8, 7, 14, 16, 18, 20, 29]
+2020-09-11 21:09:32,575 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:09:33,958 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:10:16,139 - logs - WARNING - [32, 38, 9, 10, 12, 16, 20, 26, 29]
+2020-09-11 21:13:34,617 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:13:36,040 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:14:18,238 - logs - WARNING - [35, 4, 37, 39, 15, 19, 22, 23, 28]
+2020-09-11 21:23:03,486 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:23:04,955 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:23:47,133 - logs - WARNING - [32, 34, 3, 5, 14, 15, 17, 21, 26]
+2020-09-11 21:25:35,705 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:25:37,120 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:26:19,297 - logs - WARNING - [34, 4, 24, 26, 28, 30]
+2020-09-11 21:28:16,218 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:28:17,615 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:28:59,779 - logs - WARNING - [8, 10, 15, 20, 22, 23, 25, 28]
+2020-09-11 21:29:18,670 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:29:20,088 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:30:02,249 - logs - WARNING - [33, 10, 13, 15, 17, 18, 20, 22, 25]
+2020-09-11 21:30:56,853 - logs - ERROR - check status fail (n) for pam:4 and baserate:33
+2020-09-11 21:33:06,913 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:33:08,342 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:33:13,215 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:33:14,635 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:33:36,769 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:33:38,213 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:33:55,187 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:33:56,592 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:34:11,760 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:34:13,205 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:38:06,439 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:38:07,860 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:38:30,169 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:38:31,587 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:39:00,877 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:39:02,254 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:39:35,633 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:40:33,424 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:40:34,839 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:40:55,082 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:40:56,502 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:41:03,412 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:41:04,840 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:41:14,793 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:41:16,212 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:41:47,461 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:41:48,915 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:41:59,600 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:42:01,037 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:42:49,258 - logs - WARNING - [33, 35, 4, 37, 6, 7, 39, 20, 29]
+2020-09-11 21:43:24,081 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-11 21:43:25,519 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-11 21:44:13,733 - logs - WARNING - [32, 36, 37, 11, 12, 16, 17, 22]
+2020-09-15 13:21:39,626 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 13:21:41,051 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 13:22:29,278 - logs - WARNING - [36, 7, 39, 16, 18, 20, 26]
+2020-09-15 14:05:51,744 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 14:05:53,168 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 14:06:41,401 - logs - WARNING - [2, 4, 39, 8, 10, 14, 15, 22, 28]
+2020-09-15 14:10:05,376 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 14:10:06,807 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 14:11:06,156 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 14:11:07,572 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:34:24,514 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 15:34:25,941 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:35:14,147 - logs - WARNING - [37, 39, 11, 12, 16, 17, 19, 23, 25]
+2020-09-15 15:35:16,160 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:35:22,228 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:46:53,965 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 15:46:55,401 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:46:56,413 - logs - WARNING - socked was open
+2020-09-15 15:47:44,661 - logs - WARNING - [33, 35, 37, 8, 10, 14, 24, 29]
+2020-09-15 15:47:45,677 - logs - WARNING - socked was open
+2020-09-15 15:47:54,793 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:55:49,188 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 15:55:50,573 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:55:51,584 - logs - WARNING - socked was open
+2020-09-15 15:56:39,800 - logs - WARNING - [33, 5, 38, 16, 19, 21, 25, 30]
+2020-09-15 15:56:40,812 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:57:00,075 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 15:57:01,507 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:57:02,510 - logs - WARNING - socked was open
+2020-09-15 15:57:50,735 - logs - WARNING - [34, 3, 36, 5, 11, 16, 17, 20, 22, 30]
+2020-09-15 15:57:51,747 - logs - WARNING - socked was open
+2020-09-15 15:58:00,863 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:58:25,968 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 15:58:27,415 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 15:58:28,420 - logs - WARNING - socked was open
+2020-09-15 15:59:16,626 - logs - WARNING - [32, 2, 3, 8, 14, 19, 20, 22, 28]
+2020-09-15 15:59:17,641 - logs - WARNING - socked was closed, reopening
+2020-09-15 15:59:23,697 - logs - WARNING - socked was closed, reopening
+2020-09-15 16:02:06,437 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 16:02:07,876 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 16:02:08,885 - logs - WARNING - socked was open
+2020-09-15 16:02:57,125 - logs - WARNING - [34, 6, 12, 16, 17, 21, 24, 30, 31]
+2020-09-15 16:02:58,139 - logs - WARNING - socked was open
+2020-09-15 16:03:47,278 - logs - WARNING - socked was closed, reopening
+2020-09-15 16:04:38,330 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 16:04:39,760 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 16:04:40,767 - logs - WARNING - socked was open
+2020-09-15 16:05:28,990 - logs - WARNING - [35, 38, 7, 39, 9, 19, 23]
+2020-09-15 16:05:30,005 - logs - WARNING - socked was closed, reopening
+2020-09-15 16:50:50,146 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 16:50:51,579 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 16:50:52,594 - logs - WARNING - socked was open
+2020-09-15 16:51:40,865 - logs - WARNING - [33, 2, 36, 5, 7, 12, 16, 22, 24]
+2020-09-15 16:51:41,879 - logs - WARNING - socked was closed, reopening
+2020-09-15 16:56:43,262 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 16:56:44,671 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 16:56:45,684 - logs - WARNING - socked was open
+2020-09-15 16:57:33,966 - logs - WARNING - [32, 2, 35, 3, 6, 39, 10, 13, 19, 22]
+2020-09-15 16:57:34,981 - logs - WARNING - socked was open
+2020-09-15 16:58:24,120 - logs - WARNING - socked was closed, reopening
+2020-09-15 17:01:18,831 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 17:01:18,832 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52566), raddr=('192.168.1.11', 22)>
+2020-09-15 17:01:20,245 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 17:01:21,259 - logs - WARNING - socked was open
+2020-09-15 17:02:09,455 - logs - WARNING - [32, 2, 6, 38, 9, 10, 11, 12, 23, 27]
+2020-09-15 17:02:10,468 - logs - WARNING - socked was closed, reopening
+2020-09-15 17:02:10,469 - logs - WARNING - <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52579), raddr=('192.168.1.11', 22)>
+2020-09-15 17:02:11,888 - logs - WARNING - <socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52581), raddr=('192.168.1.11', 22)>
+2020-09-15 17:19:11,470 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 17:19:11,471 - logs - WARNING - <socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52823), raddr=('192.168.1.11', 22)>
+2020-09-15 17:19:12,899 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 17:19:13,914 - logs - WARNING - socked was open
+2020-09-15 17:20:02,147 - logs - WARNING - [34, 5, 13, 14, 19, 22, 24, 26, 31]
+2020-09-15 17:20:03,156 - logs - WARNING - socked was open
+2020-09-15 17:20:52,299 - logs - WARNING - <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52844), raddr=('192.168.1.11', 22)>
+2020-09-15 17:21:02,805 - logs - WARNING - DSL connection established for pam:4 and baserate:34
+2020-09-15 17:21:03,818 - logs - WARNING - socked was open
+2020-09-15 17:21:52,948 - logs - WARNING - <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52859), raddr=('192.168.1.11', 22)>
+2020-09-15 17:22:03,435 - logs - WARNING - DSL connection established for pam:4 and baserate:5
+2020-09-15 17:22:04,451 - logs - WARNING - socked was open
+2020-09-15 17:22:53,571 - logs - WARNING - <socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52873), raddr=('192.168.1.11', 22)>
+2020-09-15 17:23:04,034 - logs - WARNING - DSL connection established for pam:4 and baserate:13
+2020-09-15 17:23:05,048 - logs - WARNING - socked was open
+2020-09-15 17:23:54,161 - logs - WARNING - <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52887), raddr=('192.168.1.11', 22)>
+2020-09-15 17:24:04,697 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-15 17:24:05,708 - logs - WARNING - socked was open
+2020-09-15 17:24:54,805 - logs - WARNING - <socket.socket fd=620, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52901), raddr=('192.168.1.11', 22)>
+2020-09-15 17:25:05,338 - logs - WARNING - DSL connection established for pam:4 and baserate:19
+2020-09-15 17:25:06,350 - logs - WARNING - socked was open
+2020-09-15 17:25:55,484 - logs - WARNING - <socket.socket fd=868, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52915), raddr=('192.168.1.11', 22)>
+2020-09-15 17:26:06,015 - logs - WARNING - DSL connection established for pam:4 and baserate:22
+2020-09-15 17:26:07,029 - logs - WARNING - socked was open
+2020-09-15 17:26:56,139 - logs - WARNING - <socket.socket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52933), raddr=('192.168.1.11', 22)>
+2020-09-15 17:27:06,634 - logs - WARNING - DSL connection established for pam:4 and baserate:24
+2020-09-15 17:27:07,646 - logs - WARNING - socked was open
+2020-09-15 17:27:56,759 - logs - WARNING - <socket.socket fd=876, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52947), raddr=('192.168.1.11', 22)>
+2020-09-15 17:28:07,267 - logs - WARNING - DSL connection established for pam:4 and baserate:26
+2020-09-15 17:28:08,281 - logs - WARNING - socked was open
+2020-09-15 17:28:57,379 - logs - WARNING - <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 52961), raddr=('192.168.1.11', 22)>
+2020-09-15 17:29:07,867 - logs - WARNING - DSL connection established for pam:4 and baserate:31
+2020-09-15 17:29:08,879 - logs - WARNING - socked was open
+2020-09-15 17:34:44,054 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 17:34:44,055 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53071), raddr=('192.168.1.11', 22)>
+2020-09-15 17:34:45,489 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 17:35:33,683 - logs - WARNING - [3, 4, 37, 6, 35, 8, 14, 17]
+2020-09-15 17:36:22,797 - logs - WARNING - <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53095), raddr=('192.168.1.11', 22)>
+2020-09-15 17:36:33,260 - logs - WARNING - DSL connection established for pam:4 and baserate:3
+2020-09-15 17:37:22,389 - logs - WARNING - <socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53109), raddr=('192.168.1.11', 22)>
+2020-09-15 17:37:32,884 - logs - WARNING - DSL connection established for pam:4 and baserate:4
+2020-09-15 17:38:22,007 - logs - WARNING - <socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53124), raddr=('192.168.1.11', 22)>
+2020-09-15 17:38:32,518 - logs - WARNING - DSL connection established for pam:4 and baserate:37
+2020-09-15 17:39:21,629 - logs - WARNING - <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53141), raddr=('192.168.1.11', 22)>
+2020-09-15 17:39:32,126 - logs - WARNING - DSL connection established for pam:4 and baserate:6
+2020-09-15 17:40:21,268 - logs - WARNING - <socket.socket fd=876, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53155), raddr=('192.168.1.11', 22)>
+2020-09-15 17:40:31,748 - logs - WARNING - DSL connection established for pam:4 and baserate:35
+2020-09-15 17:41:20,856 - logs - WARNING - <socket.socket fd=928, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53169), raddr=('192.168.1.11', 22)>
+2020-09-15 17:41:31,316 - logs - WARNING - DSL connection established for pam:4 and baserate:8
+2020-09-15 17:42:20,407 - logs - WARNING - <socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53184), raddr=('192.168.1.11', 22)>
+2020-09-15 17:42:30,924 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-15 17:43:20,059 - logs - WARNING - <socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53199), raddr=('192.168.1.11', 22)>
+2020-09-15 17:43:30,560 - logs - WARNING - DSL connection established for pam:4 and baserate:17
+2020-09-15 18:02:03,391 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 18:02:03,391 - logs - WARNING - <socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53441), raddr=('192.168.1.11', 22)>
+2020-09-15 18:02:04,829 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 18:26:38,782 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 18:26:38,783 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53762), raddr=('192.168.1.11', 22)>
+2020-09-15 18:26:40,207 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 18:26:58,437 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 18:27:28,443 - logs - WARNING - [32, 34, 3, 39, 12, 14, 21, 25, 29, 31]
+2020-09-15 18:27:28,446 - logs - WARNING - <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53765), raddr=('192.168.1.10', 23)>
+2020-09-15 18:28:30,523 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-15 18:28:30,527 - logs - WARNING - <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53778), raddr=('192.168.1.10', 23)>
+2020-09-15 18:29:30,195 - logs - WARNING - DSL connection established for pam:4 and baserate:34
+2020-09-15 18:29:30,199 - logs - WARNING - <socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53792), raddr=('192.168.1.10', 23)>
+2020-09-15 18:30:29,851 - logs - WARNING - DSL connection established for pam:4 and baserate:3
+2020-09-15 18:30:29,854 - logs - WARNING - <socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53806), raddr=('192.168.1.10', 23)>
+2020-09-15 18:31:29,498 - logs - WARNING - DSL connection established for pam:4 and baserate:39
+2020-09-15 18:31:29,501 - logs - WARNING - <socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53818), raddr=('192.168.1.10', 23)>
+2020-09-15 18:32:29,106 - logs - WARNING - DSL connection established for pam:4 and baserate:12
+2020-09-15 18:32:29,109 - logs - WARNING - <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53834), raddr=('192.168.1.10', 23)>
+2020-09-15 18:33:31,135 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-15 18:33:31,136 - logs - WARNING - <socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53849), raddr=('192.168.1.10', 23)>
+2020-09-15 18:34:30,730 - logs - WARNING - DSL connection established for pam:4 and baserate:21
+2020-09-15 18:34:30,732 - logs - WARNING - <socket.socket fd=984, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53865), raddr=('192.168.1.10', 23)>
+2020-09-15 18:35:30,389 - logs - WARNING - DSL connection established for pam:4 and baserate:25
+2020-09-15 18:35:30,392 - logs - WARNING - <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53879), raddr=('192.168.1.10', 23)>
+2020-09-15 18:36:30,033 - logs - WARNING - DSL connection established for pam:4 and baserate:29
+2020-09-15 18:36:30,036 - logs - WARNING - <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 53894), raddr=('192.168.1.10', 23)>
+2020-09-15 18:37:29,667 - logs - WARNING - DSL connection established for pam:4 and baserate:31
+2020-09-15 19:14:32,276 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 19:14:32,277 - logs - WARNING - <socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54384), raddr=('192.168.1.11', 22)>
+2020-09-15 19:14:33,692 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 19:14:58,654 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 19:14:58,654 - logs - WARNING - <socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54393), raddr=('192.168.1.11', 22)>
+2020-09-15 19:15:00,096 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 19:15:12,242 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:15:18,323 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 19:15:48,331 - logs - WARNING - [34, 7, 39, 20, 22, 23, 24, 26, 30]
+2020-09-15 19:15:48,334 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:16:47,981 - logs - ERROR - no DSL connection for pam:4 and baserate:34
+2020-09-15 19:16:47,982 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:17:47,608 - logs - ERROR - no DSL connection for pam:4 and baserate:7
+2020-09-15 19:17:47,610 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:18:47,205 - logs - ERROR - no DSL connection for pam:4 and baserate:39
+2020-09-15 19:18:47,209 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:19:46,799 - logs - WARNING - DSL connection established for pam:4 and baserate:20
+2020-09-15 19:19:46,803 - logs - WARNING - <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54394), raddr=('192.168.1.10', 23)>
+2020-09-15 19:20:38,503 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 19:20:38,504 - logs - WARNING - <socket.socket fd=288, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54470), raddr=('192.168.1.11', 22)>
+2020-09-15 19:20:39,933 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 19:20:52,078 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:20:58,162 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 19:21:28,163 - logs - WARNING - [3, 4, 37, 8, 9, 15, 19, 27]
+2020-09-15 19:21:28,166 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:22:30,264 - logs - WARNING - DSL connection established for pam:4 and baserate:3
+2020-09-15 19:22:30,266 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:23:29,883 - logs - ERROR - no DSL connection for pam:4 and baserate:4
+2020-09-15 19:23:29,887 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:24:29,495 - logs - ERROR - no DSL connection for pam:4 and baserate:37
+2020-09-15 19:24:29,498 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:25:29,102 - logs - ERROR - no DSL connection for pam:4 and baserate:8
+2020-09-15 19:25:29,105 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:26:28,724 - logs - ERROR - no DSL connection for pam:4 and baserate:9
+2020-09-15 19:26:28,728 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:27:28,352 - logs - ERROR - no DSL connection for pam:4 and baserate:15
+2020-09-15 19:27:28,356 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:28:27,963 - logs - ERROR - no DSL connection for pam:4 and baserate:19
+2020-09-15 19:28:27,966 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 19:29:27,546 - logs - ERROR - no DSL connection for pam:4 and baserate:27
+2020-09-15 19:29:39,689 - logs - WARNING - <socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54473), raddr=('192.168.1.10', 23)>
+2020-09-15 20:01:00,912 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 20:01:00,912 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54983), raddr=('192.168.1.11', 22)>
+2020-09-15 20:01:02,281 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 20:01:38,820 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 20:01:38,821 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54997), raddr=('192.168.1.11', 22)>
+2020-09-15 20:01:40,258 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 20:01:58,492 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:02:28,503 - logs - WARNING - [32, 38, 39, 15, 17, 18, 20, 28]
+2020-09-15 20:03:28,081 - logs - ERROR - no DSL connection for pam:4 and baserate:32
+2020-09-15 20:05:25,863 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 20:05:25,864 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 55047), raddr=('192.168.1.11', 22)>
+2020-09-15 20:05:27,282 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 20:05:46,493 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:06:16,503 - logs - WARNING - [32, 15, 16, 17, 18, 19, 20, 22, 24, 29]
+2020-09-15 20:07:18,586 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-15 20:08:18,186 - logs - WARNING - DSL connection established for pam:4 and baserate:15
+2020-09-15 20:09:17,816 - logs - WARNING - DSL connection established for pam:4 and baserate:16
+2020-09-15 20:10:17,438 - logs - WARNING - DSL connection established for pam:4 and baserate:17
+2020-09-15 20:11:17,080 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-15 20:12:16,657 - logs - WARNING - DSL connection established for pam:4 and baserate:19
+2020-09-15 20:13:16,236 - logs - WARNING - DSL connection established for pam:4 and baserate:20
+2020-09-15 20:14:15,856 - logs - WARNING - DSL connection established for pam:4 and baserate:22
+2020-09-15 20:15:15,488 - logs - WARNING - DSL connection established for pam:4 and baserate:24
+2020-09-15 20:16:15,097 - logs - WARNING - DSL connection established for pam:4 and baserate:29
+2020-09-15 20:16:34,318 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:17:04,332 - logs - WARNING - [36, 5, 37, 40, 43, 78, 48, 18, 55, 29]
+2020-09-15 20:18:04,304 - logs - ERROR - no DSL connection for pam:8 and baserate:36
+2020-09-15 20:19:03,939 - logs - WARNING - DSL connection established for pam:8 and baserate:5
+2020-09-15 20:20:03,540 - logs - WARNING - DSL connection established for pam:8 and baserate:37
+2020-09-15 20:21:03,158 - logs - WARNING - DSL connection established for pam:8 and baserate:40
+2020-09-15 20:22:02,719 - logs - WARNING - DSL connection established for pam:8 and baserate:43
+2020-09-15 20:23:02,300 - logs - WARNING - DSL connection established for pam:8 and baserate:78
+2020-09-15 20:24:01,925 - logs - WARNING - DSL connection established for pam:8 and baserate:48
+2020-09-15 20:25:01,514 - logs - WARNING - DSL connection established for pam:8 and baserate:18
+2020-09-15 20:26:01,147 - logs - WARNING - DSL connection established for pam:8 and baserate:55
+2020-09-15 20:26:57,670 - logs - ERROR - no DSL connection for pam:8 and baserate:29
+2020-09-15 20:27:16,921 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:27:46,923 - logs - WARNING - [32, 33, 34, 3, 36, 37, 45, 57, 94, 95]
+2020-09-15 20:28:48,937 - logs - WARNING - DSL connection established for pam:16 and baserate:32
+2020-09-15 20:29:48,582 - logs - WARNING - DSL connection established for pam:16 and baserate:33
+2020-09-15 20:30:48,238 - logs - WARNING - DSL connection established for pam:16 and baserate:34
+2020-09-15 20:31:47,839 - logs - WARNING - DSL connection established for pam:16 and baserate:3
+2020-09-15 20:32:47,430 - logs - WARNING - DSL connection established for pam:16 and baserate:36
+2020-09-15 20:33:47,054 - logs - WARNING - DSL connection established for pam:16 and baserate:37
+2020-09-15 20:34:46,698 - logs - WARNING - DSL connection established for pam:16 and baserate:45
+2020-09-15 20:35:46,281 - logs - WARNING - DSL connection established for pam:16 and baserate:57
+2020-09-15 20:36:45,854 - logs - WARNING - DSL connection established for pam:16 and baserate:94
+2020-09-15 20:37:45,507 - logs - WARNING - DSL connection established for pam:16 and baserate:95
+2020-09-15 20:38:04,759 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:38:34,767 - logs - WARNING - [35, 102, 39, 7, 11, 48, 113, 88, 94, 158]
+2020-09-15 20:39:36,819 - logs - WARNING - DSL connection established for pam:32 and baserate:35
+2020-09-15 20:40:36,410 - logs - WARNING - DSL connection established for pam:32 and baserate:102
+2020-09-15 20:46:43,183 - logs - ERROR - no DSL connection for pam:32 and baserate:39
+2020-09-15 20:47:42,814 - logs - WARNING - DSL connection established for pam:32 and baserate:7
+2020-09-15 20:48:42,451 - logs - WARNING - DSL connection established for pam:32 and baserate:11
+2020-09-15 20:49:42,081 - logs - WARNING - DSL connection established for pam:32 and baserate:48
+2020-09-15 20:50:41,741 - logs - WARNING - DSL connection established for pam:32 and baserate:113
+2020-09-15 20:51:41,346 - logs - WARNING - DSL connection established for pam:32 and baserate:88
+2020-09-15 20:52:40,914 - logs - WARNING - DSL connection established for pam:32 and baserate:94
+2020-09-15 20:53:40,502 - logs - WARNING - DSL connection established for pam:32 and baserate:158
+2020-09-15 20:53:59,750 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 20:54:29,761 - logs - WARNING - [69, 37, 138, 10, 141, 15, 48, 178, 27, 31]
+2020-09-15 20:55:31,781 - logs - WARNING - DSL connection established for pam:64 and baserate:69
+2020-09-15 20:56:31,399 - logs - WARNING - DSL connection established for pam:64 and baserate:37
+2020-09-15 20:57:31,018 - logs - WARNING - DSL connection established for pam:64 and baserate:138
+2020-09-15 20:58:30,631 - logs - WARNING - DSL connection established for pam:64 and baserate:10
+2020-09-15 20:59:30,248 - logs - WARNING - DSL connection established for pam:64 and baserate:141
+2020-09-15 21:00:29,884 - logs - WARNING - DSL connection established for pam:64 and baserate:15
+2020-09-15 21:01:29,460 - logs - WARNING - DSL connection established for pam:64 and baserate:48
+2020-09-15 21:02:29,114 - logs - WARNING - DSL connection established for pam:64 and baserate:178
+2020-09-15 21:03:28,742 - logs - WARNING - DSL connection established for pam:64 and baserate:27
+2020-09-15 21:04:28,325 - logs - WARNING - DSL connection established for pam:64 and baserate:31
+2020-09-15 21:04:47,572 - logs - WARNING - Baserate 20 was set!
+Waiting 30 sec!
+2020-09-15 21:05:17,581 - logs - WARNING - [224, 225, 7, 232, 41, 74, 21, 184, 218, 93]
+2020-09-15 21:06:19,635 - logs - WARNING - DSL connection established for pam:128 and baserate:224
+2020-09-15 21:07:19,258 - logs - WARNING - DSL connection established for pam:128 and baserate:225
+2020-09-15 21:08:18,898 - logs - WARNING - DSL connection established for pam:128 and baserate:7
+2020-09-15 21:09:18,532 - logs - WARNING - DSL connection established for pam:128 and baserate:232
+2020-09-15 21:10:18,172 - logs - WARNING - DSL connection established for pam:128 and baserate:41
+2020-09-15 21:11:17,827 - logs - WARNING - DSL connection established for pam:128 and baserate:74
+2020-09-15 21:12:17,481 - logs - WARNING - DSL connection established for pam:128 and baserate:21
+2020-09-15 21:13:17,137 - logs - WARNING - DSL connection established for pam:128 and baserate:184
+2020-09-15 21:14:16,745 - logs - WARNING - DSL connection established for pam:128 and baserate:218
+2020-09-15 21:15:16,371 - logs - WARNING - DSL connection established for pam:128 and baserate:93

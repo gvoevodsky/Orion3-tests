@@ -30,12 +30,13 @@ def test_web(device, pam, baserate, channel='1', mode='Master'):
 
 def test_cli(device, pam, baserate, channel=1, mode='Master'):
     logs.logger.info('Starting cli test___________________________________________________________')
-    device.reconnect()
+    # device.reconnect()
+    device.open_cli()
     cli_basement_moves.set_br(device, pam, baserate, 1, mode)
 
-
 def test_cli_in_configuration_menu(device, pam, baserate, channel=1):
-    device.reconnect()
+    # device.reconnect()
+    device.open_cli()
     device.move('3')
     device.move("pam ", pam, ' ', channel, '\r')
     device.move('baserate ', baserate, ' ', channel, '\r')
@@ -43,9 +44,9 @@ def test_cli_in_configuration_menu(device, pam, baserate, channel=1):
 
 
 def test_main(devices):
+    N = 10
     i = 0
     for pam in pam_pull:
-
         for device in devices:
             if device == devices[0]:
                 if device.__class__.__name__ == 'WebAdapter':  # setting br = 20; pam = 32. now u can set any pam.
@@ -70,39 +71,38 @@ def test_main(devices):
                     device.move('ext on ', 1, '\r')
                     device.move('apply')
 
-        logs.logger.info('Baserate 20 was set!\nWaiting 30 sec!')
+        logs.logger.warning('Baserate 20 was set! Waiting 30 sec!')
         time.sleep(30)
 
         random_baserate_pull = []
-        for i in range(10):
+        for i in range(N):
             random_baserate_pull.append(random.choice(baserate_pull_to_pam[pam]))
-        logs.logger.warning(list(set(random_baserate_pull)))
+        logs.logger.warning(f'Starting test for pam: {pam} and baserate pull: {list(set(random_baserate_pull))}')
         for random_baserate in list(set(random_baserate_pull)):
 
             list_of_threads = []
             for device in devices:
                 if device.__class__.__name__ == 'WebAdapter':
                     if device == devices[0]:
-                        thread = Thread(target=test_web, args=(device, pam, random_baserate, 1, 'Master'))
+                        mode = 'Master'
                     else:
-                        thread = Thread(target=test_web, args=(device, pam, random_baserate, 1, 'Slave'))
+                        mode = 'Slave'
+                    thread = Thread(target=test_web, args=(device, pam, random_baserate, 1, mode))
                     list_of_threads.append(thread)
+
                 elif device.__class__.__name__ == 'ComAdapter' or device.__class__.__name__ == 'TelnetAdapter' or device.__class__.__name__ == 'SshAdapter':  # we can do faster by adding device.move methods instead of test_cli()
                     if i == 0:
                         if device == devices[0]:
-                            thread = Thread(target=test_cli, args=(device, pam, random_baserate, 1, 'Master'))
+                            mode = 'Master'
                         else:
-                            thread = Thread(target=test_cli, args=(device, pam, random_baserate, 1, 'Slave'))
+                            mode = 'Slave'
+                        thread = Thread(target=test_cli, args=(device, pam, random_baserate, 1, mode))
                         list_of_threads.append(thread)
                         i = 1
                     else:
-                        if device == devices[0]:
-                            thread = Thread(target=test_cli_in_configuration_menu,
-                                            args=(device, pam, random_baserate, 1))
-                        else:
-                            thread = Thread(target=test_cli_in_configuration_menu,
-                                            args=(device, pam, random_baserate, 1))
-                        list_of_threads.append(thread)
+                        thread = Thread(target=test_cli_in_configuration_menu,
+                                        args=(device, pam, random_baserate, 1))
+                    list_of_threads.append(thread)
                 else:
                     logs.logger.error('Wrong Device Class!!')
                     break
@@ -113,22 +113,20 @@ def test_main(devices):
             list_of_threads[1].join()
             logs.logger.info('WAITING FOR DSL CONNECTION_______________________________________________')
             if devices[0].__class__.__name__ == 'WebAdapter':
-                devices[0].reconnect()
                 result = web_basement_moves.check_dsl_connection(devices[0])
                 if result == '1':
                     logs.logger.warning(f'DSL connection established for pam:{pam} and baserate:{random_baserate}')
                 elif result == '0':
                     logs.logger.error(f'no dsl connection for pam:{pam} and baserate:{random_baserate}')
                 else:
-                    logs.logger.error(f'check status fail ({result}) for pam:{pam} and baserate:{random_baserate}')
+                    logs.logger.critical(f'check status fail ({result}) for pam:{pam} and baserate:{random_baserate}')
 
             elif devices[
                 0].__class__.__name__ == 'ComAdapter' or device.__class__.__name__ == 'TelnetAdapter' or device.__class__.__name__ == 'SshAdapter':
-                devices[0].reconnect()
                 result = cli_basement_moves.check_status(devices[0])
                 if result == '1':
                     logs.logger.warning(f'DSL connection established for pam:{pam} and baserate:{random_baserate}')
                 elif result == '-':
                     logs.logger.error(f'no DSL connection for pam:{pam} and baserate:{random_baserate}')
                 else:
-                    logs.logger.error(f'check status fail ({result}) for pam:{pam} and baserate:{random_baserate}')
+                    logs.logger.critical(f'check status fail ({result}) for pam:{pam} and baserate:{random_baserate}')

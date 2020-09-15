@@ -3,6 +3,7 @@ import logs
 
 
 def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
+    #io_adapter.reconnect()
     open_cli(io_adapter)
     io_adapter.move("m")
     io_adapter.move("3")
@@ -13,11 +14,11 @@ def set_br(io_adapter, pam, baserate, channel=1, mode = 'Master'):
     else:
         io_adapter.move('master off ', channel, '\r')
     io_adapter.move('apply')
+    #io_adapter.socket_close()
 
 
 def check_status(io_adapter):
-    waiting_for_connection_time = 1
-    #io_adapter.reconnect()
+    waiting_for_connection_time = 40
     time.sleep(waiting_for_connection_time)
     open_cli(io_adapter)
     io_adapter.move('m')
@@ -35,7 +36,7 @@ def open_cli(io_adapter):
     io_adapter.open_cli()
 
 
-def reconnect(io_adapter):
+def reconnect(io_adapter): #???
     io_adapter.reconnect()
 
 

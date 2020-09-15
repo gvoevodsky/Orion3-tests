@@ -1,9 +1,9 @@
 import paramiko
 import io_adapter
 import socket
-import sys
 import time
 import logs
+
 
 class SshAdapter(io_adapter.IOAdapter):
     DELAY = 1
@@ -14,7 +14,6 @@ class SshAdapter(io_adapter.IOAdapter):
         self.args = args
         self.socket = socket
 
-
     def send(self, arg):
         encoded_string = str(arg).encode(encoding='utf-8')  # is it needed?
         self.io_object.send(encoded_string)
@@ -23,30 +22,43 @@ class SshAdapter(io_adapter.IOAdapter):
         return self.io_object.recv(self.NUMBER_OF_SYMBOLS_TO_RETURN).decode(encoding='utf-8')
 
     def open_cli(self):
-        self.io_object.invoke_shell()
-        print("Opening CLI")
-        self.send('\n')
+        self.reconnect()
+        logs.logger.info("Opening CLI")
         self.send('\r')
 
     def move(self, *pargs):
         for arg in pargs:
             self.send(arg)
         self.send('\r')
+        time.sleep(self.DELAY)
         text = self.read()
         logs.logger.info(text)
-        time.sleep(self.DELAY)
+        #time.sleep(self.DELAY)
+        if self.socket._closed:
+            logs.logger.info('socked closed')
+        else:
+            logs.logger.info('socket opened')
         return text
 
     def reconnect(self):
-        time.sleep(2)
+        logs.logger.info('recconecting ssh session\n')
         if self.socket._closed:
-            self.io_object = ssh_init(self.args).io_object
+            time.sleep(1)
+            logs.logger.info('socked was closed, reopening')
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.socket.connect((self.args[1], 22))
+            logs.logger.info(self.socket)
+            ts = paramiko.Transport(self.socket)
+            ts.start_client(timeout=10)
+            ts.auth_interactive(username=self.args[2], handler=handler)
+            self.io_object = ts.open_session(timeout=self.args[3])
             self.io_object.invoke_shell()
         else:
+            logs.logger.info('socked was open')
             pass
 
-        #self.io_object = ssh_init(sys.argv).io_object  # check this
-        #self.io_object.invoke_shell()
+    def socket_close(self):
+        self.socket.close()
 
     def close_session(self):
         self.io_object.close()
@@ -59,12 +71,13 @@ def handler():
 def ssh_init(arguments):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((arguments[1], 22))  # arguments[1] = device ip
+    logs.logger.warning(sock)
     ts = paramiko.Transport(sock)
     ts.start_client(timeout=10)
     ts.auth_interactive(username=arguments[2], handler=handler)  # argument[2] = username
     chan = ts.open_session(timeout=arguments[3])
-    # chan.invoke_shell()
-    return SshAdapter(io_object=chan, args = arguments, socket = sock)
+    chan.invoke_shell()
+    return SshAdapter(io_object=chan, args=arguments, socket=sock)
 
 
 if __name__ == '__main__':

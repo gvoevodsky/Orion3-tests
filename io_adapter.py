@@ -19,3 +19,6 @@ class IOAdapter:
 
     def close_session(self):
         pass
+
+    def socket_close(self):
+        pass
