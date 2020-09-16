@@ -6,11 +6,10 @@ import logs
 def close_browser(device):
     device.driver.close()
 
-def test_test(device):
-    print(device)
 
 def get_url(device):
     device.open_url()
+
 
 def set_params(device, pam, baserate, channel='1', mode='Master'):
     device.driver.switch_to.frame('main')
@@ -50,12 +49,12 @@ def configuration_menu(device):
     device.driver.switch_to.default_content()
 
 
-def set_payload_eth(driver):
-    driver.switch_to.frame('main')
-    driver.find_element_by_css_selector('#toc > li:nth-child(3) > a').click()  # Switch to Payload
-    payload_eth = driver.find_element_by_id('WAN')
-    payload_e1_1 = driver.find_element_by_id('E1-1')
-    payload_e1_2 = driver.find_element_by_id('E1-2')
+def set_payload_eth(device):
+    device.driver.switch_to.frame('main')
+    device.driver.find_element_by_css_selector('#toc > li:nth-child(3) > a').click()  # Switch to Payload
+    payload_eth = device.driver.find_element_by_id('WAN')
+    payload_e1_1 = device.driver.find_element_by_id('E1-1')
+    payload_e1_2 = device.driver.find_element_by_id('E1-2')
     if payload_eth.get_attribute('checked') == "true":
         pass  # установка payload = eth
     else:
@@ -68,10 +67,10 @@ def set_payload_eth(driver):
         payload_e1_2.click()  # установка payload - e1-2
     else:
         pass
-    savebutton = driver.find_element_by_css_selector('input[value="Save"]')
+    savebutton = device.driver.find_element_by_css_selector('input[value="Save"]')
     savebutton.click()
     time.sleep(1)
-    driver.switch_to.default_content()
+    device.driver.switch_to.default_content()
 
 
 def set_rstp_a_on(driver):
@@ -82,21 +81,14 @@ def set_rstp_a_on(driver):
     driver.switch_to.default_content()
 
 
-def check_dsl_connection(driver):
-    driver.switch_to.frame('left')
-    driver.find_element_by_css_selector("tbody > tr:nth-child(3) > td > a").click()  # переход в DSL Status
-    time.sleep(30)  # Ожидание установки DSL соединения
-    driver.switch_to.default_content()
-    driver.switch_to.frame('main')
-    dsl_status = driver.find_element_by_css_selector("body > table > tbody > tr:nth-child(3) > td:nth-child(2)").text
-    print(dsl_status)
-    driver.switch_to.default_content()
-    if dsl_status == 1:
-        logs.logger.warning('DSL connection established')
-    elif dsl_status == 0:
-        logs.logger.error('no dsl connection')
-    else:
-        logs.logger.error(f'check status fail :{dsl_status}')
+def check_dsl_connection(device):
+    device.driver.switch_to.frame('left')
+    device.driver.find_element_by_css_selector("tbody > tr:nth-child(3) > td > a").click()  # переход в DSL Status
+    device.driver.switch_to.default_content()
+    device.driver.switch_to.frame('main')
+    dsl_status = device.driver.find_element_by_css_selector("body > table > tbody > tr:nth-child(3) > td:nth-child(2)").text
+    device.driver.switch_to.default_content()
+    close_browser(device)
     return dsl_status
 
 
@@ -121,6 +113,7 @@ def apply_confirm(device):
     device.driver.switch_to.default_content()
 
 
+trash = '''
 def test_first(driver, pam, baserate, channel='1'):
     driver.get("http://" + master_ip)
     configuration_menu(driver)
@@ -166,4 +159,4 @@ def test_second(driver, pam, baserate, channel='1'):  # Не настраива�
         print('dsl is not working')
     else:
         print('test failed')
-    driver.close()
+    driver.close() '''

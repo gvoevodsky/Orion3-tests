@@ -1,8 +1,7 @@
 import logging
 import sys
 import logging.handlers
-#class Logs(logging.Logger):
-#    def
+
 
 
 logger = logging.getLogger(__name__)
@@ -16,7 +15,6 @@ c_handler.setLevel(logging.INFO)
 f_handler.setLevel(logging.WARNING)
 r_handler.setLevel(logging.WARNING)
 
-#c_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
 c_format = logging.Formatter('%(message)s')
 f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 r_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

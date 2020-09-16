@@ -27,18 +27,21 @@ class SshAdapter(io_adapter.IOAdapter):
         self.send('\r')
 
     def move(self, *pargs):
-        for arg in pargs:
-            self.send(arg)
-        self.send('\r')
-        time.sleep(self.DELAY)
-        text = self.read()
-        logs.logger.info(text)
-        #time.sleep(self.DELAY)
-        if self.socket._closed:
-            logs.logger.info('socked closed')
-        else:
-            logs.logger.info('socket opened')
-        return text
+        try:
+            for arg in pargs:
+                self.send(arg)
+            self.send('\r')
+            time.sleep(self.DELAY)
+            text = self.read()
+            logs.logger.info(text)
+            if self.socket._closed: # debug if/else
+                logs.logger.info('socked closed')
+            else:
+                logs.logger.info('socket opened')
+            return text
+        except paramiko.ssh_exception.SSHException:
+            logs.logger.critical('SSH socket error!')
+            self.reconnect()
 
     def reconnect(self):
         logs.logger.info('recconecting ssh session\n')
@@ -71,7 +74,7 @@ def handler():
 def ssh_init(arguments):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((arguments[1], 22))  # arguments[1] = device ip
-    logs.logger.warning(sock)
+    logs.logger.info(sock)
     ts = paramiko.Transport(sock)
     ts.start_client(timeout=10)
     ts.auth_interactive(username=arguments[2], handler=handler)  # argument[2] = username

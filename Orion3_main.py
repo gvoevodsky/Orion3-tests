@@ -14,7 +14,7 @@ parser.add_argument('--device', nargs='+', help='Device configuration')
 parser.add_argument('--test', help='tests to run')
 args = parser.parse_known_args(sys.argv)[0]
 
-logs.logger.warning('Test started with ARGS:' + str(args))
+logs.logger.warning('TEST STARTED WITH ARGS: ' + str(args))
 
 list_of_connections = []
 for device in args.device:
@@ -52,4 +52,4 @@ for device in args.device:
 if __name__ == '__main__':
     test_to_run = args.test
     iter_tools = importlib.import_module(('.' + args.test), '.tests')
-    iter_tools.test_main(list_of_connections) # will run test_main from imported module
+    iter_tools.test_main(list_of_connections) # will run test_main() from imported module

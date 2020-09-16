@@ -35,13 +35,13 @@ class TelnetAdapter(io_adapter.IOAdapter):
 
     def reconnect(self):
         logs.logger.info('Reconnecting telnet session')
-        #logs.logger.warning(self.socket._closed)
-        #if self.socket._closed:
+        # logs.logger.warning(self.socket._closed)
+        # if self.socket._closed:
         #    logs.logger.info('socked was closed, reopening')
         #    self.io_object = telnetlib.Telnet(host=self.args[1], port=23, timeout=int(self.args[2]))
         #    self.socket = self.io_object.get_socket()
         #    time.sleep(1)
-        #else:
+        # else:
         #    logs.logger.info('socked was open')
         #    pass
         self.disconnect()

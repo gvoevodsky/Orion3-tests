@@ -364,3 +364,318 @@ Waiting 30 sec!
 2020-09-15 21:13:17,137 - logs - WARNING - DSL connection established for pam:128 and baserate:184
 2020-09-15 21:14:16,745 - logs - WARNING - DSL connection established for pam:128 and baserate:218
 2020-09-15 21:15:16,371 - logs - WARNING - DSL connection established for pam:128 and baserate:93
+2020-09-15 21:33:08,804 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-15 21:33:08,804 - logs - WARNING - <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 56315), raddr=('192.168.1.11', 22)>
+2020-09-15 21:33:10,208 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-15 21:33:23,366 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-15 21:33:53,374 - logs - WARNING - Starting test for pam: 4 and baserate pull: [2, 7, 10, 15, 18, 19, 20, 23, 25, 26]
+2020-09-15 21:34:47,284 - logs - WARNING - DSL connection established for pam:4 and baserate:2
+2020-09-15 21:35:39,831 - logs - WARNING - DSL connection established for pam:4 and baserate:7
+2020-09-15 21:36:32,387 - logs - WARNING - DSL connection established for pam:4 and baserate:10
+2020-09-15 21:37:24,937 - logs - WARNING - DSL connection established for pam:4 and baserate:15
+2020-09-15 21:38:17,440 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-15 21:39:10,008 - logs - WARNING - DSL connection established for pam:4 and baserate:19
+2020-09-15 21:40:02,546 - logs - WARNING - DSL connection established for pam:4 and baserate:20
+2020-09-15 21:40:55,103 - logs - WARNING - DSL connection established for pam:4 and baserate:23
+2020-09-15 21:41:47,658 - logs - WARNING - DSL connection established for pam:4 and baserate:25
+2020-09-15 21:42:40,224 - logs - WARNING - DSL connection established for pam:4 and baserate:26
+2020-09-15 21:42:53,419 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-15 21:43:23,420 - logs - WARNING - Starting test for pam: 8 and baserate pull: [33, 3, 68, 7, 42, 14, 48, 50, 58, 29]
+2020-09-15 21:44:17,351 - logs - WARNING - DSL connection established for pam:8 and baserate:33
+2020-09-15 21:45:09,858 - logs - WARNING - DSL connection established for pam:8 and baserate:3
+2020-09-15 21:46:02,415 - logs - WARNING - DSL connection established for pam:8 and baserate:68
+2020-09-15 21:46:54,954 - logs - WARNING - DSL connection established for pam:8 and baserate:7
+2020-09-15 21:47:47,499 - logs - WARNING - DSL connection established for pam:8 and baserate:42
+2020-09-15 21:48:40,072 - logs - WARNING - DSL connection established for pam:8 and baserate:14
+2020-09-15 21:49:32,618 - logs - WARNING - DSL connection established for pam:8 and baserate:48
+2020-09-15 21:50:25,191 - logs - WARNING - DSL connection established for pam:8 and baserate:50
+2020-09-15 21:51:17,756 - logs - WARNING - DSL connection established for pam:8 and baserate:58
+2020-09-15 21:52:10,311 - logs - WARNING - DSL connection established for pam:8 and baserate:29
+2020-09-15 21:52:23,497 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-15 21:52:53,506 - logs - WARNING - Starting test for pam: 16 and baserate pull: [65, 66, 3, 100, 101, 71, 14, 81, 24, 28]
+2020-09-15 21:53:47,472 - logs - WARNING - DSL connection established for pam:16 and baserate:65
+2020-09-15 21:54:40,019 - logs - WARNING - DSL connection established for pam:16 and baserate:66
+2020-09-15 21:55:32,569 - logs - WARNING - DSL connection established for pam:16 and baserate:3
+2020-09-15 21:56:25,114 - logs - WARNING - DSL connection established for pam:16 and baserate:100
+2020-09-15 21:57:17,638 - logs - WARNING - DSL connection established for pam:16 and baserate:101
+2020-09-15 21:58:10,210 - logs - WARNING - DSL connection established for pam:16 and baserate:71
+2020-09-15 21:59:02,758 - logs - WARNING - DSL connection established for pam:16 and baserate:14
+2020-09-15 21:59:55,321 - logs - WARNING - DSL connection established for pam:16 and baserate:81
+2020-09-15 22:00:47,879 - logs - WARNING - DSL connection established for pam:16 and baserate:24
+2020-09-15 22:01:40,426 - logs - WARNING - DSL connection established for pam:16 and baserate:28
+2020-09-15 22:01:53,626 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-15 22:02:23,642 - logs - WARNING - Starting test for pam: 32 and baserate pull: [69, 135, 8, 60, 143, 51, 83, 23, 25, 28]
+2020-09-15 22:03:17,604 - logs - WARNING - DSL connection established for pam:32 and baserate:69
+2020-09-15 22:04:10,148 - logs - WARNING - DSL connection established for pam:32 and baserate:135
+2020-09-15 22:05:02,666 - logs - WARNING - DSL connection established for pam:32 and baserate:8
+2020-09-15 22:05:55,206 - logs - ERROR - no DSL connection for pam:32 and baserate:60
+2020-09-15 22:06:47,783 - logs - WARNING - DSL connection established for pam:32 and baserate:143
+2020-09-15 22:07:40,344 - logs - WARNING - DSL connection established for pam:32 and baserate:51
+2020-09-15 22:08:32,878 - logs - WARNING - DSL connection established for pam:32 and baserate:83
+2020-09-15 22:09:25,412 - logs - WARNING - DSL connection established for pam:32 and baserate:23
+2020-09-16 15:35:10,239 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 15:35:10,241 - logs - WARNING - <socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 54099), raddr=('192.168.1.11', 22)>
+2020-09-16 15:35:11,729 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 15:35:24,889 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 15:35:54,898 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 35, 7, 13, 14, 18, 19, 25]
+2020-09-16 15:36:48,860 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-16 15:37:41,428 - logs - WARNING - DSL connection established for pam:4 and baserate:35
+2020-09-16 15:38:34,011 - logs - WARNING - DSL connection established for pam:4 and baserate:7
+2020-09-16 15:39:26,602 - logs - WARNING - DSL connection established for pam:4 and baserate:13
+2020-09-16 15:40:19,145 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-16 15:41:11,702 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-16 15:42:04,241 - logs - WARNING - DSL connection established for pam:4 and baserate:19
+2020-09-16 15:42:56,752 - logs - WARNING - DSL connection established for pam:4 and baserate:25
+2020-09-16 15:43:09,945 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 15:43:39,950 - logs - WARNING - Starting test for pam: 8 and baserate pull: [3, 36, 69, 42, 75, 53, 59, 29]
+2020-09-16 15:44:33,912 - logs - WARNING - DSL connection established for pam:8 and baserate:3
+2020-09-16 15:45:26,439 - logs - WARNING - DSL connection established for pam:8 and baserate:36
+2020-09-16 15:46:18,989 - logs - WARNING - DSL connection established for pam:8 and baserate:69
+2020-09-16 15:47:11,540 - logs - WARNING - DSL connection established for pam:8 and baserate:42
+2020-09-16 15:48:04,092 - logs - WARNING - DSL connection established for pam:8 and baserate:75
+2020-09-16 15:48:56,639 - logs - WARNING - DSL connection established for pam:8 and baserate:53
+2020-09-16 15:49:49,225 - logs - WARNING - DSL connection established for pam:8 and baserate:59
+2020-09-16 15:50:41,752 - logs - WARNING - DSL connection established for pam:8 and baserate:29
+2020-09-16 15:50:54,878 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 15:51:24,880 - logs - WARNING - Starting test for pam: 16 and baserate pull: [66, 35, 36, 99, 38, 76, 52, 89, 92]
+2020-09-16 15:52:18,854 - logs - WARNING - DSL connection established for pam:16 and baserate:66
+2020-09-16 15:53:11,410 - logs - WARNING - DSL connection established for pam:16 and baserate:35
+2020-09-16 16:51:27,729 - logs - WARNING - Test started with ARGS:Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 16:51:27,730 - logs - WARNING - <socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 55131), raddr=('192.168.1.11', 22)>
+2020-09-16 16:51:29,149 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 16:51:42,307 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 16:52:12,320 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 33, 34, 36, 37, 6, 4, 12, 18]
+2020-09-16 16:53:06,257 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-16 16:53:58,824 - logs - WARNING - DSL connection established for pam:4 and baserate:33
+2020-09-16 16:54:51,374 - logs - WARNING - DSL connection established for pam:4 and baserate:34
+2020-09-16 16:55:43,934 - logs - WARNING - DSL connection established for pam:4 and baserate:36
+2020-09-16 16:56:36,450 - logs - WARNING - DSL connection established for pam:4 and baserate:37
+2020-09-16 16:57:29,030 - logs - WARNING - DSL connection established for pam:4 and baserate:6
+2020-09-16 16:58:21,569 - logs - WARNING - DSL connection established for pam:4 and baserate:4
+2020-09-16 16:59:14,143 - logs - WARNING - DSL connection established for pam:4 and baserate:12
+2020-09-16 17:00:06,708 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-16 17:00:19,897 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:00:49,903 - logs - WARNING - Starting test for pam: 8 and baserate pull: [33, 39, 7, 9, 45, 48, 20, 60, 61]
+2020-09-16 17:01:43,865 - logs - WARNING - DSL connection established for pam:8 and baserate:33
+2020-09-16 17:02:36,436 - logs - WARNING - DSL connection established for pam:8 and baserate:39
+2020-09-16 17:03:29,008 - logs - WARNING - DSL connection established for pam:8 and baserate:7
+2020-09-16 17:04:21,560 - logs - WARNING - DSL connection established for pam:8 and baserate:9
+2020-09-16 17:05:14,105 - logs - WARNING - DSL connection established for pam:8 and baserate:45
+2020-09-16 17:06:06,661 - logs - WARNING - DSL connection established for pam:8 and baserate:48
+2020-09-16 17:06:59,217 - logs - WARNING - DSL connection established for pam:8 and baserate:20
+2020-09-16 17:07:51,768 - logs - WARNING - DSL connection established for pam:8 and baserate:60
+2020-09-16 17:08:44,320 - logs - WARNING - DSL connection established for pam:8 and baserate:61
+2020-09-16 17:08:57,510 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:09:27,521 - logs - WARNING - Starting test for pam: 16 and baserate pull: [64, 97, 2, 3, 103, 111, 115, 117, 56]
+2020-09-16 17:10:21,448 - logs - WARNING - DSL connection established for pam:16 and baserate:64
+2020-09-16 17:11:13,991 - logs - WARNING - DSL connection established for pam:16 and baserate:97
+2020-09-16 17:12:06,566 - logs - WARNING - DSL connection established for pam:16 and baserate:2
+2020-09-16 17:12:59,140 - logs - WARNING - DSL connection established for pam:16 and baserate:3
+2020-09-16 17:13:51,692 - logs - WARNING - DSL connection established for pam:16 and baserate:103
+2020-09-16 17:14:44,271 - logs - WARNING - DSL connection established for pam:16 and baserate:111
+2020-09-16 17:15:36,826 - logs - WARNING - DSL connection established for pam:16 and baserate:115
+2020-09-16 17:16:29,365 - logs - WARNING - DSL connection established for pam:16 and baserate:117
+2020-09-16 17:17:21,911 - logs - WARNING - DSL connection established for pam:16 and baserate:56
+2020-09-16 17:17:35,071 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:18:05,079 - logs - WARNING - Starting test for pam: 32 and baserate pull: [5, 73, 107, 141, 15, 49, 83, 148, 54, 92]
+2020-09-16 17:18:59,016 - logs - WARNING - DSL connection established for pam:32 and baserate:5
+2020-09-16 17:19:51,556 - logs - WARNING - DSL connection established for pam:32 and baserate:73
+2020-09-16 17:20:44,088 - logs - WARNING - DSL connection established for pam:32 and baserate:107
+2020-09-16 17:21:36,624 - logs - WARNING - DSL connection established for pam:32 and baserate:141
+2020-09-16 17:22:29,203 - logs - WARNING - DSL connection established for pam:32 and baserate:15
+2020-09-16 17:23:21,829 - logs - WARNING - DSL connection established for pam:32 and baserate:49
+2020-09-16 17:24:14,403 - logs - WARNING - DSL connection established for pam:32 and baserate:83
+2020-09-16 17:25:06,983 - logs - WARNING - DSL connection established for pam:32 and baserate:148
+2020-09-16 17:25:59,580 - logs - WARNING - DSL connection established for pam:32 and baserate:54
+2020-09-16 17:26:52,147 - logs - WARNING - DSL connection established for pam:32 and baserate:92
+2020-09-16 17:27:05,333 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:27:35,347 - logs - WARNING - Starting test for pam: 64 and baserate pull: [193, 99, 13, 45, 143, 145, 21, 57, 190]
+2020-09-16 17:28:29,275 - logs - WARNING - DSL connection established for pam:64 and baserate:193
+2020-09-16 17:29:21,815 - logs - WARNING - DSL connection established for pam:64 and baserate:99
+2020-09-16 17:30:14,387 - logs - WARNING - DSL connection established for pam:64 and baserate:13
+2020-09-16 17:31:06,960 - logs - WARNING - DSL connection established for pam:64 and baserate:45
+2020-09-16 17:31:59,504 - logs - WARNING - DSL connection established for pam:64 and baserate:143
+2020-09-16 17:32:52,066 - logs - WARNING - DSL connection established for pam:64 and baserate:145
+2020-09-16 17:33:44,629 - logs - WARNING - DSL connection established for pam:64 and baserate:21
+2020-09-16 17:34:37,183 - logs - WARNING - DSL connection established for pam:64 and baserate:57
+2020-09-16 17:35:29,707 - logs - WARNING - DSL connection established for pam:64 and baserate:190
+2020-09-16 17:35:42,877 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:36:12,890 - logs - WARNING - Starting test for pam: 128 and baserate pull: [5, 70, 198, 8, 170, 171, 204, 236, 146, 151]
+2020-09-16 17:37:06,850 - logs - WARNING - DSL connection established for pam:128 and baserate:5
+2020-09-16 17:37:59,435 - logs - WARNING - DSL connection established for pam:128 and baserate:70
+2020-09-16 17:38:51,993 - logs - WARNING - DSL connection established for pam:128 and baserate:198
+2020-09-16 17:39:44,535 - logs - WARNING - DSL connection established for pam:128 and baserate:8
+2020-09-16 17:40:37,088 - logs - WARNING - DSL connection established for pam:128 and baserate:170
+2020-09-16 17:41:29,632 - logs - WARNING - DSL connection established for pam:128 and baserate:171
+2020-09-16 17:42:22,185 - logs - WARNING - DSL connection established for pam:128 and baserate:204
+2020-09-16 17:43:14,745 - logs - WARNING - DSL connection established for pam:128 and baserate:236
+2020-09-16 17:44:07,330 - logs - WARNING - DSL connection established for pam:128 and baserate:146
+2020-09-16 17:44:59,863 - logs - WARNING - DSL connection established for pam:128 and baserate:151
+2020-09-16 17:46:22,476 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 17:46:22,477 - logs - WARNING - <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 55943), raddr=('192.168.1.11', 22)>
+2020-09-16 17:46:23,930 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 17:46:37,092 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:47:07,100 - logs - WARNING - Starting test for pam: 4 and baserate pull: [35, 5, 37, 7, 9, 10, 11, 12, 26]
+2020-09-16 17:48:00,975 - logs - WARNING - DSL connection established for pam:4 and baserate:35
+2020-09-16 17:48:53,574 - logs - WARNING - DSL connection established for pam:4 and baserate:5
+2020-09-16 17:49:46,150 - logs - WARNING - DSL connection established for pam:4 and baserate:37
+2020-09-16 17:50:38,687 - logs - WARNING - DSL connection established for pam:4 and baserate:7
+2020-09-16 17:51:31,208 - logs - WARNING - DSL connection established for pam:4 and baserate:9
+2020-09-16 17:52:23,784 - logs - WARNING - DSL connection established for pam:4 and baserate:10
+2020-09-16 17:53:16,300 - logs - WARNING - DSL connection established for pam:4 and baserate:11
+2020-09-16 17:54:08,851 - logs - WARNING - DSL connection established for pam:4 and baserate:12
+2020-09-16 17:55:01,391 - logs - WARNING - DSL connection established for pam:4 and baserate:26
+2020-09-16 17:55:14,572 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 17:55:44,580 - logs - WARNING - Starting test for pam: 8 and baserate pull: [33, 5, 37, 8, 11, 15, 17, 52, 21, 25]
+2020-09-16 17:56:38,500 - logs - WARNING - DSL connection established for pam:8 and baserate:33
+2020-09-16 17:57:31,024 - logs - WARNING - DSL connection established for pam:8 and baserate:5
+2020-09-16 17:58:23,529 - logs - WARNING - DSL connection established for pam:8 and baserate:37
+2020-09-16 17:59:16,113 - logs - WARNING - DSL connection established for pam:8 and baserate:8
+2020-09-16 18:00:08,715 - logs - WARNING - DSL connection established for pam:8 and baserate:11
+2020-09-16 18:01:01,264 - logs - WARNING - DSL connection established for pam:8 and baserate:15
+2020-09-16 18:01:53,766 - logs - WARNING - DSL connection established for pam:8 and baserate:17
+2020-09-16 18:02:46,329 - logs - WARNING - DSL connection established for pam:8 and baserate:52
+2020-09-16 18:03:38,866 - logs - WARNING - DSL connection established for pam:8 and baserate:21
+2020-09-16 18:04:31,457 - logs - WARNING - DSL connection established for pam:8 and baserate:25
+2020-09-16 18:04:44,627 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 18:05:14,633 - logs - WARNING - Starting test for pam: 16 and baserate pull: [100, 102, 75, 76, 77, 80, 81, 58, 30, 31]
+2020-09-16 18:06:08,585 - logs - WARNING - DSL connection established for pam:16 and baserate:100
+2020-09-16 18:07:01,121 - logs - WARNING - DSL connection established for pam:16 and baserate:102
+2020-09-16 18:07:53,651 - logs - WARNING - DSL connection established for pam:16 and baserate:75
+2020-09-16 18:08:46,197 - logs - WARNING - DSL connection established for pam:16 and baserate:76
+2020-09-16 18:09:38,758 - logs - WARNING - DSL connection established for pam:16 and baserate:77
+2020-09-16 18:10:31,317 - logs - WARNING - DSL connection established for pam:16 and baserate:80
+2020-09-16 18:11:23,880 - logs - WARNING - DSL connection established for pam:16 and baserate:81
+2020-09-16 18:12:16,461 - logs - WARNING - DSL connection established for pam:16 and baserate:58
+2020-09-16 18:13:09,020 - logs - WARNING - DSL connection established for pam:16 and baserate:30
+2020-09-16 18:14:01,542 - logs - WARNING - DSL connection established for pam:16 and baserate:31
+2020-09-16 18:14:14,730 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 18:14:44,743 - logs - WARNING - Starting test for pam: 32 and baserate pull: [65, 5, 103, 73, 139, 45, 48, 16, 55, 152]
+2020-09-16 18:15:38,701 - logs - WARNING - DSL connection established for pam:32 and baserate:65
+2020-09-16 18:16:31,308 - logs - WARNING - DSL connection established for pam:32 and baserate:5
+2020-09-16 18:17:23,830 - logs - WARNING - DSL connection established for pam:32 and baserate:103
+2020-09-16 18:18:16,410 - logs - WARNING - DSL connection established for pam:32 and baserate:73
+2020-09-16 18:19:08,963 - logs - WARNING - DSL connection established for pam:32 and baserate:139
+2020-09-16 18:20:01,530 - logs - WARNING - DSL connection established for pam:32 and baserate:45
+2020-09-16 18:20:54,082 - logs - WARNING - DSL connection established for pam:32 and baserate:48
+2020-09-16 18:21:46,641 - logs - WARNING - DSL connection established for pam:32 and baserate:16
+2020-09-16 18:22:39,184 - logs - WARNING - DSL connection established for pam:32 and baserate:55
+2020-09-16 18:23:31,718 - logs - WARNING - DSL connection established for pam:32 and baserate:152
+2020-09-16 18:23:44,888 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 18:24:14,895 - logs - WARNING - Starting test for pam: 64 and baserate pull: [160, 2, 166, 198, 40, 137, 140, 181, 118, 125]
+2020-09-16 18:25:08,785 - logs - WARNING - DSL connection established for pam:64 and baserate:160
+2020-09-16 18:26:01,320 - logs - ERROR - no DSL connection for pam:64 and baserate:2
+2020-09-16 18:26:53,871 - logs - WARNING - DSL connection established for pam:64 and baserate:166
+2020-09-16 18:27:46,407 - logs - WARNING - DSL connection established for pam:64 and baserate:198
+2020-09-16 18:28:38,965 - logs - WARNING - DSL connection established for pam:64 and baserate:40
+2020-09-16 18:29:31,481 - logs - WARNING - DSL connection established for pam:64 and baserate:137
+2020-09-16 18:30:24,047 - logs - WARNING - DSL connection established for pam:64 and baserate:140
+2020-09-16 18:31:16,605 - logs - WARNING - DSL connection established for pam:64 and baserate:181
+2020-09-16 18:32:09,169 - logs - WARNING - DSL connection established for pam:64 and baserate:118
+2020-09-16 18:33:01,683 - logs - WARNING - DSL connection established for pam:64 and baserate:125
+2020-09-16 18:33:14,882 - logs - WARNING - Baserate 20 was set! Waiting 30 sec!
+2020-09-16 18:33:44,886 - logs - WARNING - Starting test for pam: 128 and baserate pull: [65, 233, 171, 236, 176, 51, 212, 149, 84, 25]
+2020-09-16 18:34:38,796 - logs - WARNING - DSL connection established for pam:128 and baserate:65
+2020-09-16 18:35:31,321 - logs - WARNING - DSL connection established for pam:128 and baserate:233
+2020-09-16 18:36:23,864 - logs - WARNING - DSL connection established for pam:128 and baserate:171
+2020-09-16 18:37:16,389 - logs - WARNING - DSL connection established for pam:128 and baserate:236
+2020-09-16 18:38:08,954 - logs - WARNING - DSL connection established for pam:128 and baserate:176
+2020-09-16 18:39:01,522 - logs - WARNING - DSL connection established for pam:128 and baserate:51
+2020-09-16 18:39:54,063 - logs - WARNING - DSL connection established for pam:128 and baserate:212
+2020-09-16 18:40:46,613 - logs - WARNING - DSL connection established for pam:128 and baserate:149
+2020-09-16 18:41:39,161 - logs - WARNING - DSL connection established for pam:128 and baserate:84
+2020-09-16 18:42:31,725 - logs - WARNING - DSL connection established for pam:128 and baserate:25
+2020-09-16 18:42:31,726 - logs - WARNING - Test completed
+2020-09-16 19:25:03,502 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['ssh:192.168.1.11:admin:10', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:25:03,503 - logs - WARNING - <socket.socket fd=604, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.3', 57404), raddr=('192.168.1.11', 22)>
+2020-09-16 19:25:04,899 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:25:18,104 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:25:23,114 - logs - WARNING - Starting test for pam: 4 and baserate pull: [33, 2, 3, 37, 13, 14, 18, 24, 30]
+2020-09-16 19:26:17,053 - logs - WARNING - DSL connection established for pam:4 and baserate:33
+2020-09-16 19:27:09,621 - logs - WARNING - DSL connection established for pam:4 and baserate:2
+2020-09-16 19:28:02,190 - logs - WARNING - DSL connection established for pam:4 and baserate:3
+2020-09-16 19:28:54,727 - logs - WARNING - DSL connection established for pam:4 and baserate:37
+2020-09-16 19:29:47,291 - logs - WARNING - DSL connection established for pam:4 and baserate:13
+2020-09-16 19:30:39,839 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-16 19:31:32,407 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-16 19:32:24,978 - logs - WARNING - DSL connection established for pam:4 and baserate:24
+2020-09-16 19:33:17,566 - logs - WARNING - DSL connection established for pam:4 and baserate:30
+2020-09-16 19:33:30,724 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:33:35,734 - logs - WARNING - Starting test for pam: 8 and baserate pull: [68, 6, 74, 78, 49, 18, 26, 59, 60, 62]
+2020-09-16 19:34:29,664 - logs - WARNING - DSL connection established for pam:8 and baserate:68
+2020-09-16 19:35:22,200 - logs - WARNING - DSL connection established for pam:8 and baserate:6
+2020-09-16 19:36:14,742 - logs - WARNING - DSL connection established for pam:8 and baserate:74
+2020-09-16 19:37:07,315 - logs - WARNING - DSL connection established for pam:8 and baserate:78
+2020-09-16 19:37:59,875 - logs - WARNING - DSL connection established for pam:8 and baserate:49
+2020-09-16 19:38:52,388 - logs - WARNING - DSL connection established for pam:8 and baserate:18
+2020-09-16 19:39:45,006 - logs - WARNING - DSL connection established for pam:8 and baserate:26
+2020-09-16 19:40:37,523 - logs - WARNING - DSL connection established for pam:8 and baserate:59
+2020-09-16 19:41:30,014 - logs - WARNING - DSL connection established for pam:8 and baserate:60
+2020-09-16 19:41:34,285 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:https://192.168.1.1:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:41:34,293 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:41:47,941 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:https://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:41:47,965 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:42:09,666 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:42:09,669 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:42:27,683 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:42:32,689 - logs - WARNING - Starting test for pam: 4 and baserate pull: [36, 5, 11, 15, 17, 22, 25, 30, 31]
+2020-09-16 19:45:17,534 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:45:17,554 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:45:35,518 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:45:40,520 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 4, 8, 9, 19, 20, 23, 28, 30]
+2020-09-16 19:50:10,097 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:50:10,103 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:50:28,009 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:50:33,016 - logs - WARNING - Starting test for pam: 4 and baserate pull: [34, 4, 5, 37, 12, 26, 28, 29]
+2020-09-16 19:51:27,609 - logs - CRITICAL - check status fail (-) for pam:4 and baserate:34
+2020-09-16 19:52:22,275 - logs - WARNING - DSL connection established for pam:4 and baserate:4
+2020-09-16 19:54:20,539 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:54:20,573 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:54:38,525 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:54:43,534 - logs - WARNING - Starting test for pam: 4 and baserate pull: [33, 34, 37, 8, 11, 12, 14, 15, 20, 27]
+2020-09-16 19:56:16,188 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 19:56:16,197 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 19:56:34,112 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 19:56:39,127 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 2, 38, 8, 12, 16, 24, 25, 29]
+2020-09-16 19:57:33,409 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-16 19:58:28,341 - logs - WARNING - DSL connection established for pam:4 and baserate:2
+2020-09-16 19:59:29,091 - logs - WARNING - DSL connection established for pam:4 and baserate:38
+2020-09-16 20:00:22,349 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 20:00:22,381 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 20:00:40,353 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 20:00:45,366 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 35, 38, 39, 8, 21, 22, 23, 29]
+2020-09-16 20:01:36,267 - logs - WARNING - TEST STARTED WITH ARGS: Namespace(device=['web:http://192.168.1.11:80:Chrome', 'telnet:192.168.1.10:10'], test='test_10_random_baserates')
+2020-09-16 20:01:36,289 - logs - WARNING - .tests.test_10_random_baserates started
+2020-09-16 20:01:54,209 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 20:01:59,215 - logs - WARNING - Starting test for pam: 4 and baserate pull: [32, 9, 10, 11, 12, 14, 18, 21, 23, 31]
+2020-09-16 20:02:53,798 - logs - WARNING - DSL connection established for pam:4 and baserate:32
+2020-09-16 20:03:48,379 - logs - WARNING - DSL connection established for pam:4 and baserate:9
+2020-09-16 20:04:49,009 - logs - WARNING - DSL connection established for pam:4 and baserate:10
+2020-09-16 20:05:43,606 - logs - WARNING - DSL connection established for pam:4 and baserate:11
+2020-09-16 20:06:38,123 - logs - WARNING - DSL connection established for pam:4 and baserate:12
+2020-09-16 20:07:32,937 - logs - WARNING - DSL connection established for pam:4 and baserate:14
+2020-09-16 20:08:39,737 - logs - WARNING - DSL connection established for pam:4 and baserate:18
+2020-09-16 20:09:34,329 - logs - WARNING - DSL connection established for pam:4 and baserate:21
+2020-09-16 20:10:29,072 - logs - WARNING - DSL connection established for pam:4 and baserate:23
+2020-09-16 20:11:44,067 - logs - WARNING - DSL connection established for pam:4 and baserate:31
+2020-09-16 20:12:02,074 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 20:12:07,079 - logs - WARNING - Starting test for pam: 8 and baserate pull: [34, 35, 5, 38, 8, 45, 47, 21, 23, 62]
+2020-09-16 20:13:01,919 - logs - WARNING - DSL connection established for pam:8 and baserate:34
+2020-09-16 20:13:56,754 - logs - WARNING - DSL connection established for pam:8 and baserate:35
+2020-09-16 20:14:51,435 - logs - WARNING - DSL connection established for pam:8 and baserate:5
+2020-09-16 20:15:58,422 - logs - WARNING - DSL connection established for pam:8 and baserate:38
+2020-09-16 20:16:53,033 - logs - WARNING - DSL connection established for pam:8 and baserate:8
+2020-09-16 20:17:47,632 - logs - WARNING - DSL connection established for pam:8 and baserate:45
+2020-09-16 20:18:42,042 - logs - WARNING - DSL connection established for pam:8 and baserate:47
+2020-09-16 20:19:44,124 - logs - WARNING - DSL connection established for pam:8 and baserate:21
+2020-09-16 20:20:38,617 - logs - WARNING - DSL connection established for pam:8 and baserate:23
+2020-09-16 20:21:33,295 - logs - WARNING - DSL connection established for pam:8 and baserate:62
+2020-09-16 20:21:51,025 - logs - WARNING - Baserate 20 for new PAM was set.
+2020-09-16 20:21:56,036 - logs - WARNING - Starting test for pam: 16 and baserate pull: [32, 96, 35, 38, 40, 72, 43, 14, 49, 63]
+2020-09-16 20:22:50,714 - logs - WARNING - DSL connection established for pam:16 and baserate:32
+2020-09-16 20:23:59,372 - logs - WARNING - DSL connection established for pam:16 and baserate:96
+2020-09-16 20:24:54,217 - logs - WARNING - DSL connection established for pam:16 and baserate:35
+2020-09-16 20:25:49,267 - logs - WARNING - DSL connection established for pam:16 and baserate:38
+2020-09-16 20:26:43,907 - logs - WARNING - DSL connection established for pam:16 and baserate:40
+2020-09-16 20:27:49,932 - logs - WARNING - DSL connection established for pam:16 and baserate:72
+2020-09-16 20:28:45,136 - logs - WARNING - DSL connection established for pam:16 and baserate:43

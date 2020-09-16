@@ -8,9 +8,6 @@ class IOAdapter:
     def open_cli(self):
         pass
 
-    def send(self):
-        pass
-
     def move(self):
         pass
 
